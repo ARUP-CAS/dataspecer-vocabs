@@ -1,0 +1,979 @@
+@base <localhost://> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Activity>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class includes as instances activities of interest to ARIADNE, that is, events that play a role in the ARIADNE Content Cloud. Activities are “actions intentionally carried out by actors that result in changes of state in the cultural, social, or physical systems documented\" (CIDOC CRM Specs 6.2)."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Activity"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "“This class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible.\" (CIDOC CRM Specs 6.2)"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Agent"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Collection>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class has as instances collections in the archaeological and archaeological-related domains. An archaeological collection is an aggregation of resources, called the members in the collection, instances of DataResource. As a consequence, collections can have other collections as members."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Collection"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises terms in thesauri, controlled vocabularies or any other reference resource providing concepts in a domain of interest. Since the class is equivalent to skos:Concept, all properties defined in SKOS can be used to represent the relevant aspects of a concept"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Concept"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, <http://www.w3.org/2004/02/skos/core#Concept>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class is intended to describe the digital resources of the ARIADNE Research Infrastructure that are data. The type of an instance of this class (e.g., GIS, database, collection and the like) is specified through the has_type property. This is an abstract class: its instances are all and only the instances of its subclasses."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Data Resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://parthenos.d4science.org/CRMext/CRMpe/PE22_Persistent_Dataset>, <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Image>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises digital images contributed to the ARIADNE Content cloud for the purpose of illustrating other resources."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Digital Image"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Media> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Media>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises digital media contributed to the ARIADNE Content cloud for the purpose of illustrating other resources."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Digital Media"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Individual_Data_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Dimension>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises values of quantifiable properties that can be determined by some measure, i.e. the radius of an approximated  spatial region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Dimension"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Document>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class has as instances documents of interest to the ARIADNE Research Infrastructure"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Document"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Individual_Data_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class has as instances all entities in the ARIADNE infrastructure."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Entity"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class has as instances events of interest to ARIADNE, that is, events that play a role in the ARIADNE Content Cloud. An event is a “change of states in cultural, social or physical systems, regardless of scale, brought about by a series or group of coherent physical, cultural, technological or legal phenomena\" (CIDOC CRM Specs 6.2)."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Event"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Group>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises “gatherings or organizations that act collectively or in a similar way due to any form of unifying relationship” [CRM Spec 6.2]."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Group"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Individual_Data_Resource>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class has as instances data resources that from the ARIADNE point of view are atomic, that is no further decomposed. The complementary class is that of Collection, having as instances data resources that are composed of other data resources"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Individual Data Resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Object>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class includes as instances physical objects of interest to the ARIADNE infrastructure."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Object"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Person>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises individual human beings."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Person"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "AO_Resource has as instances all archaeological resources that are represented in the ARIADNE Content Cloud"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "ARIADNE Resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class is intended to describe services in the archaeological domain. A service is “an offer by some actor of their willingness and ability to execute an activity or series of activities upon request\" (PEM Specifications 3.1). Types of services are: stand-alone service, web service, front-office services and back-office service, as specified by the has_type property."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Service"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://parthenos.d4science.org/CRMext/CRMpe/PE8_E-Service>, <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises spatial regions having one of the following forms: a point on the surface of the Earth identified by latitude and longitude; a polygon as represented by GIS systems; a rectangular region on the surface of the Earth identified by its four vertices; any region identified by a IRI in a standard gazetteer, such as Geonames for modern places, Pleiades for ancient places."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Spatial Region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E53_Place>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_BBox>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises rectangular regions on the surface of the Earth identified by its four vertices."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Spatial Region Bounding Box"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_Point>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises points on the surface of the Earth identified by latitude and longitude."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Spatial Region Point"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_Polygon>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises polygons as represented by GIS systems"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Spatial Region Polygon"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_StdName>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises spatial regions identified by a name expressed via the has_place_name property;"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Spatial Region Standard Name"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region>
+    a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises temporal extents, having a beginning, an end and a non-zero duration"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AO Temporal Region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/contains_event>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an ARIADNE Event with another ARIADNE Event that is part of it"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "contains event"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P9_consists_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/from>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate the starting date of a AO_Temporal_Region in ISO 8601 format"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "from"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P79_beginning_is_qualified_by> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/happens_during>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an ARIADNE Event with the temporal region at which the event occurred"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "happens during"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_ARIADNE_subject>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a DataResource with one the fundamental archaeological categories defined by ARIADNE"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has ARIADNE subject"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_about> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_access_policy>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to specify the URI to the statement of policy (typically, on an organization’s website) for the data resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has access policy"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_access_rights>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property contains information about who can access the resource or an indication of its security status"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has access rights"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_agent_identifier>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to specify the identifier of an agent."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has agent identifier"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_bounding_box_max_lat>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the maximum latitude value of the bounding box area defining a Spatial Region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_BBox> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has bounding box max lat"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_bounding_box_max_lon>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the maximum longitude value of the bounding box area defining a Spatial Region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_BBox> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has bounding box max lon"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_bounding_box_min_lat>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the minimum latitude value of the bounding box area defining a Spatial Region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_BBox> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has bounding box min lat"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_bounding_box_min_lon>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the minimum longitude value of the bounding box area defining a Spatial Region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_BBox> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has bounding box min lon"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_consumed_format>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the MIME type of the objects handled by the service"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has consumed format"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_consumed_media>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a service with any media type handled by the service."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has consumed media"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_type> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_contributor>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Associates any ARIADNE resource with an agent primarily responsible for contributing the description of the resource to the ARIADNE Content Cloud"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has contributor"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_coordinate_system>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the coordinate system used to encode coordinates"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has coordinate system"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_country>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a spatial region with a country. The range of the property is a wikidata URL (e.g. http://www.wikidata.org/entity/Q16) and the rdfs:label of the URL is the name of the country"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has country"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_creator>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Associates any ARIADNE resource with an agent primarily responsible for creating the resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has creator"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_data_format>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """This property associates an ARIADNE data resource with a term from a controlled vocabulary that specifies the data format of the resource. 
+		The data format refers to the specific file format or encoding format used to store or represent the data, such as CSV, JSON, XML, JPEG, MP3, etc. 
+		The term will be selected from the MIME type, a standard vocabulary of formats providing a shared way of identifying the format of a resource on the internet. 
+		For example, the MIME type for a CSV file is “text/csv”, and the MIME type for a JPEG file is “image/jpeg”. 
+		The MIME type can be also used to help determine how to process or display the data resource."""@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Individual_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has data type"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_type> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_data_type>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """This property associates an ARIADNE data resource with a term from a controlled vocabulary that specifies the data type of the resource. 
+		The data type refers to the categorisation of data based on its form, such as text, image, audio, video, etc. 
+		The terms used to describe the data type are defined in a controlled vocabulary of resource types specific to ARIADNE (e.g, 3D, GIS, XML)."""@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Individual_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has data type"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_type> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_derived_subject>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a AO_Data_Resource with a subject automatically derived by mapping a native subject of the resource to a term in the Getty AAT vocabulary"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has derived subject"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_about> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_description>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an ARIADNE Entity with a free text description of the resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has description"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_email>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to specify the mail address of an agent"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has email"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_extent>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the size of the AO_Data_Resource (i.e., number of members in a collection, number of records in a dataset, etc.)"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has extent"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_functionality>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a service with its functionality, expressed in some vocabulary"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has functionality"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://parthenos.d4science.org/CRMext/CRMpe/PP45_has_competency> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_homepage>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to specify the  home page of an agent"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has homepage"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_identifier>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an ARIADNE Entity with an identifier for that resource in some namespace other than the ARIADNE namespace (where the primary identifier of the resource belongs) and other than the provider’s namespace (which is associated to data resources by property has_original_id). The range of this property is xsd:string for generality."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has identifier"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_institution>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the institution where an agent belongs"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has institution"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_landing_page>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to specify the original landing page of a Data Resource, if any."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has landing page"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_language>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a data resource with the language of the resource, if any, specified according to a selected vocabulary"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has language"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P72_has_language> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_latitude>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the latitude value of the coordinates of a Spatial Region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_Point> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has latitude"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_longitude>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the minimum longitude value of the coordinates of a Spatial Region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_Point> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has longitude"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_name>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to specify the name of an agent"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has name"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_native_period>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a Temporal Region with a concept representing a period in some local vocabulary of the provider"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has native period"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_native_subject>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a AO_Data_Resource with an original subject in the providing institution"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has native subject"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_about> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_original_id>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a Data Resource with the original identifier of the resource supplied by the content provider"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has original id"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_owner>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Associates any ARIADNE resource with the agent that is the legal owner of the resource, holding the legal responsibility of the resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has owner"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_part>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an ARIADNE collection with a DataResource resource that the collection contains. The relation between a collection in its members must be a tree having the collection as its root and any finite depth, due to the fact that a collection may have another collection as a member"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Collection> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://parthenos.d4science.org/CRMext/CRMpe/PP20_has_persistent_dataset_part> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_period>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a AO_Temporal_Region with a temporal period defined in periodO"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has period"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_place_IRI>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a spatial region with a URI/IRI or other unique identifier from a standard gazetteer (e.g. Geonames for modern places, Pleiades for ancient places) used to refer a place or a spatialRegion"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_StdName> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has place IRI"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_place_name>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to identify a SpatialRegion with its place name"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has place name"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_polygonal_representation>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a spatial region with an XML representation of the polygon, typically handled by a GIS"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_Polygon> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has polygonal representation"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> rdf:XMLLiteral .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_primary_visual_component>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "This property associates a resource with a digital media that gives some information about the resource and that has to be preferred over other media associated to the same resource whenever a single image is required."@en, "has primary visual component"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Media> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_visual_component> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_produced_format>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the MIME type of the objects created by the service"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has produced format"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_produced_media>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the media types of the objects created by the service"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has produced media"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_publisher>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Associates any ARIADNE resource with an agent responsible for making the resource publicly accessible"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has publisher"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_responsible>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Associates any ARIADNE resource with an agent holding the scientific responsibility of the resource, such as the person or team who had enough competence and creativity to conceive the service or to gather the data on a field"@en, "has responsible"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_space_region>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property connects an object to a spatial region relevant for that object"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Object> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has space region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_spatial_coverage>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a data resource with the spatial region covered by the content of the resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has spatial coverage"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_spatial_precision>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a data resource with the approximation with which the spatial region covered by the content of the resource is specified."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has spatial precision"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Dimension> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_supported_language>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the languages supported by the service, encoded according with ISO 639 standard (ISO 639-1:2002)"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has supported language"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P72_has_language> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_technical_support>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the agent offering technical support on the service, if any"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has technical support"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://parthenos.d4science.org/CRMext/CRMpe/PP2_provided_by> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_temporal_coverage>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a data resource with the temporal region covered by the content of the resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has temporal coverage"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_time_interval>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property connects an object to a temporal region relevant for that object"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Object> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has time interval"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_title>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an AO Entity_Data_Resource with one title identifying the resource in a specific language. A resource may have more that one title, but they must all be in different languages."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has title"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_type>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an ARIADNE Entity with one or more terms from a controlled vocabulary"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has type"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_unit>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a unit of measure with a dimension. The range of this property is AO_Concept but restricted to E58_Measurement_Unit only."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Dimension> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has unit"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P91_has_unit> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_value>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a numeric value with a dimension."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Dimension> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/has_visual_component>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "This property associates a resource with a digital media that gives some information about the resource."@en, "has visual component"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Media> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_ARIADNE_subject_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_ARIADNE_subject, thus it connects a fundamental category to any Data Resource that is about that category"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is ARIADNE subject of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_subject_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_about>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a Data Resource to the ARIADNE Entity(ies) the resource is about. It is an abstract property that is always instantiated through one of its three sub-properties"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is about"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P129_is_about>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/refers_to> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_access_point_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property is_accessible_at, thus it associates any Resource that is an access point with the service that can be accessed at that access point"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is access point of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://parthenos.d4science.org/CRMext/CRMpe/PP28i_is_designated_access_point_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_access_policy_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of has_access_policy"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is access policy of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_accessible_at>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to associate a service with an IRI where the service is accessible. If the service is a web service, this IRI is the technical access point of the service. Otherwise, it is the IRI of a resource describing how the service can be accessed"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is accessible at"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://parthenos.d4science.org/CRMext/CRMpe/PP28_has_designated_access_point> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_consumed_format_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of has_consumed_format"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is consumed format of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_consumed_media_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_consumed_media, thus it associates any concept standing for a medium with the AO_Service consuming objects of that medium"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is consumed media of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P125i_was_type_of_object_used_in> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_contained_in>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property contains_event, thus it associates any ARIADNE Event with another ARIADNE Event that is contained in it"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is contained in"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_contributor_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_contributor, thus it connects an Agent to any ARIADNEResource the agent contributes a description of in the ARIADNE Content Cloud"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is contributor of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_creator_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_creator, thus it connects an Agent to any ARIADNEResource the agent is primarily responsible for creating"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is creator of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_data_format_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_data_format, thus it connects an AO_Concept to an AO_Data_Resource that is of that format."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is type of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Individual_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_type_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_data_type_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_data_type, thus it connects an AO_Concept to an AO_Data_Resource that is of that type."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is type of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Individual_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_type_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_derived_subject_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of has_derived_subject property, thus it associates a term in the AAT Getty Thesaurus with any Data Resource about that term"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is derived subject of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_subject_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_functionality_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_functionality, thus it associates a concept representing a functionality with the service offering that functionality"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is functionality of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://parthenos.d4science.org/CRMext/CRMpe/PP45i_is_competency_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_homepage_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of has_homepage"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is homepage of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_landing_page_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of has_landing_page"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is landing page of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_language_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of has_language"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is language of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P72i_is_language_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_mirror_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a digital media with the image it is a mirror of. The latter media is supposed to be on some provider’s site, identified by an IRI."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Media> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is mirror of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_native_period_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_native_period, thus it associates any concept with the temporal region it represents in some local vocabulary"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is native period of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_native_subject_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_native_subject, thus it associates any native subject with any Data Resource about that subject"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is native subject of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_subject_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_owner_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_owner, thus it connects an Agent with any ARIADNE Resource the agent is the owner of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is owner of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_part_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_part, thus it connects a Data Resource to a Collection it is part of."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Collection> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://parthenos.d4science.org/CRMext/CRMpe/PP20i_is_persistent_dataset_part_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_period_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "This is the inverse of property has_period, thus it associates any Period.O resource with the temporal region it represents"@en, "is period of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_place_IRI_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "inverse of has_place_IRI"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is place IRI of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region_StdName> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_primary_visual_component_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_primary_visual_component, thus it connects an AO_Digital_Media with any ARIADNE Resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Media> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is primary visual component of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_visual_component_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_produced_format_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of has_produced_format"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is produced format of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_produced_media_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_produced_media, thus it associates any concept standing for a medium with the AO_Service producing objects of that medium"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is produced media of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_publisher_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_publisher, thus it connects an Agent to an ARIADNEResource that the agent is reponsible for making publicly available"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is publisher of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_referenced_by>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property of refers_to"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is referenced by"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_rendered_by>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Media> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "This property associates a   "@en, "is rendered by"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_responsible_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_responsible, thus it connects an AO_Agent with any ARIADNE Resource the agent holds the scientific responsibility of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is responsible of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_space_region_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property of has_space_region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is space region of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Object> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_spatial_coverage_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_spatial_coverage, thus it associates any spatial region with the data resource whose contents cover that region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is spatial coverage of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_spatial_precision_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_spatial_precision"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Dimension> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is spatial precision of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P43i_is_dimension_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_spatial_region_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property occurs_in, thus it associates a spatial region with any event that occurred in that region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is spatial region of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_subject_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property is_about, thus it connects an ARIADNE Entity to any Data Resource that the concept is about"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is subject of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of>, <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_referenced_by> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_supported_language_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of has_supported_language"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is supported language of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P72_has_language> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_technical_support_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_technical_support, thus it associates any agent supporting a service from a technical point of view with that service"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Agent> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is technical support of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://parthenos.d4science.org/CRMext/CRMpe/PP2i_provides> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_temporal_coverage_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of property has_temporal_coverage, thus it associates a temporal region with any Data Resource whose contents cover that region"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is tempora coverage of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_temporal_region_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of happens_during"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is temporal region of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_time_interval_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property of has_time_interval"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is time interval of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Object> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_type_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_type, thus it connects an AO_Concept to an AO_Resource that is of that type."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is type of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_unit_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of has_unit"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Concept> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is unit of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Dimension> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P91i_is_unit_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/is_visual_component_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property has_visual_component, thus it connects an AO_Digital_Media with any ARIADNE Resource"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Media> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is visual component of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/occured_in_the_presence_of>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property of was_present_at"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "is space region of"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Object> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P12_occured_in_the_presence_of> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/occurs_in>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an ARIADNE Event with the spatial region in which the event occurred"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "occurs in"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Spatial_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/refers_to>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a data resource with to the ARIADNE Entity(ies) the resource refers to"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "refers to"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Entity> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/renders>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of property is_renderd_by "@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Service> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "renders"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Digital_Media> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/until>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate the ending date of a AO_Temporal_Region in ISO 8601 format"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Temporal_Region> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "until"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P80_end_is_qualified_by> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/was_created_on>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """This property is used to specify the creation date of the AO_Data_Resource. 
+		This is the date when the AO_Data_Resource was first made available online by the Publisher, 
+		(not the date of the fieldwork or laboratory analysis for instance). 
+		In some cases (e.g. where data or metadata did not already exist online) it will be the same date as the creation of the metadata for ARIADNE"""@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Data_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "was created on"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/was_issued>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an ARIADNE resource with the date of formal issuance (e.g., publication) of the resource by the publisher"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "was issued"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/was_modified>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an ARIADNE resource with the most recent date on which the resource was modified  by the publisher."@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Resource> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "was modified"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/was_present_at>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This property connects an object to a spatial region relevant for that object"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Object> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "was present at"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#range> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/AO_Event> ;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at> .
+
+<https://www.ariadne-infrastructure.eu/resource/ao/cat/1.2.1/>
+    a <http://www.w3.org/2002/07/owl#Ontology> ;
+    <http://www.w3.org/2002/07/owl#sameAs> <https://www.ariadne-infrastructure.eu/resource/ao/cat/1.1/> .
+
