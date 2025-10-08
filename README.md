@@ -2,7 +2,14 @@
 
 ### CCMM
 
+- https://www.ccmm.cz/
+- Repo: https://github.com/techlib/CCMM
+- Řízené slovníky: https://github.com/techlib/CCMM-controlled-vocab
+
 ### Dataspecer
+
+- https://dataspecer.com/
+- Demo: https://demo.dataspecer.com/
 
 ### Mapped vocabs/Ontologies
 
