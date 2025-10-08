@@ -13,6 +13,6 @@
 
 #### AO-Cat
 
-- Repo with RDFS https://zenodo.org/records/15268835
+- Repo with RDFS https://doi.org/10.5281/zenodo.15268834
 - Or download from X3M mapping tool https://demos.isl.ics.forth.gr/3m/Projects
 - PDF here https://zenodo.org/records/15348438

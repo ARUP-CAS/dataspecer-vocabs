@@ -1,3 +1,5 @@
+# Script transforms AO-Cat from RDFS to TTL
+
 library(rdflib)
 
 # Read your RDFS file (RDF/XML format)
