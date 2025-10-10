@@ -1,0 +1,2425 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix prof: <http://www.w3.org/ns/dx/prof/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix : <https://amcr.aiscr.cz/schema#>.
+
+<https://amcr.aiscr.cz/schema#> a owl:Ontology, prof:Profile.
+:jazyk a owl:Class, rdfs:Class;
+    rdfs:label "jazyk"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:chranene_udaje a owl:Class, rdfs:Class;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+:lokalita a owl:Class, rdfs:Class;
+    rdfs:label "lokalita"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :archeologicky_zaznam.
+<https://amcr.aiscr.cz/schema#lokalita.igsn> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "igsn"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :lokalita;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#lokalita.chranene_udaje> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :lokalita;
+    rdfs:range <https://amcr.aiscr.cz/schema#chranene_udaje.lokalita>.
+<https://amcr.aiscr.cz/schema#lokalita.jistota> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "jistota"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :lokalita;
+    rdfs:range :jistota_urceni.
+<https://amcr.aiscr.cz/schema#lokalita.typ_lokality> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ_lokality"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :lokalita;
+    rdfs:range :lokalita_typ.
+<https://amcr.aiscr.cz/schema#lokalita.zachovalost> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "zachovalost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :lokalita;
+    rdfs:range :stav_dochovani.
+<https://amcr.aiscr.cz/schema#lokalita.druh> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "druh"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :lokalita;
+    rdfs:range :lokalita_druh.
+:objekt_druh_kat a owl:Class, rdfs:Class;
+    rdfs:label "objekt_druh_kat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :nalez_typ.
+:nalez_predmet a owl:Class, rdfs:Class;
+    rdfs:label "nalez_predmet"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :komponenta.
+<https://amcr.aiscr.cz/schema#nalez_predmet.druh> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "druh"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_predmet;
+    rdfs:range :predmet_druh.
+<https://amcr.aiscr.cz/schema#nalez_predmet.specifikace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "specifikace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_predmet;
+    rdfs:range :predmet_specifikace.
+<https://amcr.aiscr.cz/schema#nalez_predmet.pocet> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "pocet"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_predmet;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#nalez_predmet.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_predmet;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#nalez_predmet.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_predmet;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:predmet_druh a owl:Class, rdfs:Class;
+    rdfs:label "predmet_druh"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :predmet_druh_kat.
+<https://amcr.aiscr.cz/schema#chranene_udaje.archeologicky_zaznam> a owl:Class, rdfs:Class;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :chranene_udaje, :archeologicky_zaznam.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.hlavni_katastr> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "hlavni_katastr"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.archeologicky_zaznam>;
+    rdfs:range :ruian_katastr.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.uzivatelske_oznaceni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "uzivatelske_oznaceni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.archeologicky_zaznam>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.dalsi_katastr> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dalsi_katastr"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.archeologicky_zaznam>;
+    rdfs:range :ruian_katastr.
+:organizace a owl:Class, rdfs:Class;
+    rdfs:label "organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#organizace.cteni_dokumentu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "cteni_dokumentu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#organizace.nazev_en> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev_en"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.ror> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ror"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.telefon> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "telefon"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.email> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "email"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.ico> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ico"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.zanikla> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "zanikla"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#organizace.zverejneni_pristupnost> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "zverejneni_pristupnost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range :pristupnost.
+<https://amcr.aiscr.cz/schema#organizace.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.nazev_zkraceny_en> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev_zkraceny_en"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.nazev_zkraceny> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev_zkraceny"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.adresa> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "adresa"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.oao> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "oao"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#organizace.nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#organizace.soucast> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "soucast"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range :organizace.
+<https://amcr.aiscr.cz/schema#organizace.:typ_organizace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ_organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range :organizace_typ.
+<https://amcr.aiscr.cz/schema#organizace.mesicu_do_zverejneni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "mesicu_do_zverejneni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :organizace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+:udalost_typ a owl:Class, rdfs:Class;
+    rdfs:label "udalost_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:letfoto_tvar a owl:Class, rdfs:Class;
+    rdfs:label "letfoto_tvar"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+<https://amcr.aiscr.cz/schema#chranene_udaje.adb> a owl:Class, rdfs:Class;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :chranene_udaje, :adb.
+<https://amcr.aiscr.cz/schema#adb.parcelni_cislo> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "parcelni_cislo"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.adb>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#adb.cislo_popisne> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "cislo_popisne"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.adb>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#adb.uzivatelske_oznaceni_sondy> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "uzivatelske_oznaceni_sondy"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.adb>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#adb.trat> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "trat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.adb>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#adb.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.adb>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:adb_typ a owl:Class, rdfs:Class;
+    rdfs:label "adb_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:extra_data a owl:Class, rdfs:Class;
+    rdfs:label "extra_data"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :dokument.
+<https://amcr.aiscr.cz/schema#extra_data.pocet_variant_originalu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "pocet_variant_originalu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#extra_data.rok_od> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_od"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#extra_data.geom_system> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_system"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#extra_data.odkaz> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "odkaz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#extra_data.nahrada> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "nahrada"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range :dokument_nahrada.
+<https://amcr.aiscr.cz/schema#extra_data.format> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "format"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range :dokument_format.
+<https://amcr.aiscr.cz/schema#extra_data.udalost_typ> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "udalost_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range :udalost_typ.
+<https://amcr.aiscr.cz/schema#extra_data.vyska> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "vyska"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#extra_data.duveryhodnost> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "duveryhodnost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#extra_data.geom_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#extra_data.zeme> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "zeme"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range :zeme.
+<https://amcr.aiscr.cz/schema#extra_data.geom_sjtsk_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_sjtsk_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#extra_data.rok_do> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_do"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#extra_data.zachovalost> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "zachovalost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range :dokument_zachovalost.
+<https://amcr.aiscr.cz/schema#extra_data.udalost> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "udalost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#extra_data.region> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "region"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#extra_data.meritko> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "meritko"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#extra_data.datum_vzniku> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_vzniku"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+<https://amcr.aiscr.cz/schema#extra_data.geom_sjtsk_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_sjtsk_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#extra_data.geom_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#extra_data.sirka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "sirka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#extra_data.cislo_objektu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "cislo_objektu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :extra_data;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:posudek_typ a owl:Class, rdfs:Class;
+    rdfs:label "posudek_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :posudek_typ_kat.
+:vyskovy_bod_typ a owl:Class, rdfs:Class;
+    rdfs:label "vyskovy_bod_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:dokument_ulozeni a owl:Class, rdfs:Class;
+    rdfs:label "dokument_ulozeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:pocasi a owl:Class, rdfs:Class;
+    rdfs:label "pocasi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:zeme a owl:Class, rdfs:Class;
+    rdfs:label "zeme"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:dokument_material a owl:Class, rdfs:Class;
+    rdfs:label "dokument_material"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:let a owl:Class, rdfs:Class;
+    rdfs:label "let"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#let.hodina_konec> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "hodina_konec"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#let.fotoaparat> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "fotoaparat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#let.pozorovatel> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pozorovatel"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#let.pilot> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "pilot"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#let.typ_letounu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "typ_letounu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#let.dohlednost> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dohlednost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range :dohlednost.
+<https://amcr.aiscr.cz/schema#let.dokument> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokument"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range :dokument.
+<https://amcr.aiscr.cz/schema#let.letiste_start> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "letiste_start"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range :letiste.
+<https://amcr.aiscr.cz/schema#let.letiste_cil> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "letiste_cil"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range :letiste.
+<https://amcr.aiscr.cz/schema#let.datum> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+<https://amcr.aiscr.cz/schema#let.uzivatelske_oznaceni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "uzivatelske_oznaceni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#let.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#let.ucel_letu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ucel_letu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#let.pocasi> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pocasi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range :pocasi.
+<https://amcr.aiscr.cz/schema#let.hodina_zacatek> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "hodina_zacatek"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#let.organizace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :let;
+    rdfs:range :organizace.
+<https://amcr.aiscr.cz/schema#chranene_udaje.projekt> a owl:Class, rdfs:Class;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :chranene_udaje, :projekt.
+<https://amcr.aiscr.cz/schema#projekt.hlavni_katastr> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "hlavni_katastr"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range :ruian_katastr.
+<https://amcr.aiscr.cz/schema#projekt.geom_sjtsk_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_sjtsk_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#projekt.dalsi_katastr> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dalsi_katastr"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range :ruian_katastr.
+<https://amcr.aiscr.cz/schema#projekt.geom_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#projekt.geom_sjtsk_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_sjtsk_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#projekt.parcelni_cislo> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "parcelni_cislo"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#projekt.kulturni_pamatka_cislo> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "kulturni_pamatka_cislo"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#projekt.geom_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#projekt.kulturni_pamatka_popis> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "kulturni_pamatka_popis"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#projekt.lokalizace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "lokalizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:vyskovy_bod a owl:Class, rdfs:Class;
+    rdfs:label "vyskovy_bod"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :adb.
+<https://amcr.aiscr.cz/schema#vyskovy_bod.geom_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :vyskovy_bod;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#vyskovy_bod.geom_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :vyskovy_bod;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#vyskovy_bod.typ> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :vyskovy_bod;
+    rdfs:range :vyskovy_bod_typ.
+<https://amcr.aiscr.cz/schema#vyskovy_bod.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :vyskovy_bod;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:akce a owl:Class, rdfs:Class;
+    rdfs:label "akce"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :archeologicky_zaznam.
+<https://amcr.aiscr.cz/schema#akce.ulozeni_nalezu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ulozeni_nalezu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#akce.datum_ukonceni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_ukonceni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+<https://amcr.aiscr.cz/schema#akce.je_nz> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "je_nz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#akce.vedouci_akce_ostatni> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "vedouci_akce_ostatni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range :vedouci_akce_ostatni.
+<https://amcr.aiscr.cz/schema#akce.hlavni_vedouci> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "hlavni_vedouci"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#akce.typ> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#akce.ulozeni_dokumentace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ulozeni_dokumentace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#akce.specifikace_data> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "specifikace_data"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range :datum_specifikace.
+<https://amcr.aiscr.cz/schema#akce.projekt> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "projekt"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range :projekt.
+<https://amcr.aiscr.cz/schema#akce.datum_zahajeni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_zahajeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+<https://amcr.aiscr.cz/schema#akce.organizace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range :organizace.
+<https://amcr.aiscr.cz/schema#akce.chranene_udaje> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range <https://amcr.aiscr.cz/schema#chranene_udaje.akce>.
+<https://amcr.aiscr.cz/schema#akce.odlozena_nz> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "odlozena_nz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#akce.hlavni_typ> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "hlavni_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range :akce_typ.
+<https://amcr.aiscr.cz/schema#akce.vedlejsi_typ> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "vedlejsi_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :akce;
+    rdfs:range :akce_typ.
+<https://amcr.aiscr.cz/schema#chranene_udaje.akce> a owl:Class, rdfs:Class;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :chranene_udaje, :akce.
+<https://amcr.aiscr.cz/schema#akce.souhrn_upresneni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "souhrn_upresneni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.akce>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#akce.lokalizace_okolnosti> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "lokalizace_okolnosti"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.akce>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:objekt_specifikace a owl:Class, rdfs:Class;
+    rdfs:label "objekt_specifikace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :objekt_specifikace_kat.
+:soubor a owl:Class, rdfs:Class;
+    rdfs:label "soubor"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#soubor.historie> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :soubor;
+    rdfs:range :historie.
+<https://amcr.aiscr.cz/schema#soubor.mimetype> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "mimetype"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :soubor;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#soubor.sha_512> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "sha_512"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :soubor;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#soubor.path> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "path"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :soubor;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#soubor.rozsah> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rozsah"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :soubor;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#soubor.nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :soubor;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#soubor.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :soubor;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#soubor.size_mb> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "size_mb"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :soubor;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#decimal>.
+<https://amcr.aiscr.cz/schema#soubor.url> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "url"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :soubor;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.
+:ruian_okres a owl:Class, rdfs:Class;
+    rdfs:label "ruian_okres"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :ruian_kraj.
+<https://amcr.aiscr.cz/schema#ruian_okres.definicni_bod_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "definicni_bod_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_okres;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#ruian_okres.spz> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "spz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_okres;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_okres.kraj> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "kraj"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_okres;
+    rdfs:range :ruian_kraj.
+<https://amcr.aiscr.cz/schema#ruian_okres.hranice_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "hranice_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_okres;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#ruian_okres.nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_okres;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_okres.hranice_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "hranice_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_okres;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#ruian_okres.nazev_en> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev_en"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_okres;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_okres.kod> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "kod"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_okres;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_okres.definicni_bod_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "definicni_bod_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_okres;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+:predmet_druh_kat a owl:Class, rdfs:Class;
+    rdfs:label "predmet_druh_kat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :nalez_typ.
+:dokument_zachovalost a owl:Class, rdfs:Class;
+    rdfs:label "dokument_zachovalost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:ruian_katastr a owl:Class, rdfs:Class;
+    rdfs:label "ruian_katastr"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :ruian_okres.
+<https://amcr.aiscr.cz/schema#ruian_katastr.definicni_bod_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "definicni_bod_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_katastr;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#ruian_katastr.kod> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "kod"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_katastr;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_katastr.okres> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "okres"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_katastr;
+    rdfs:range :ruian_okres.
+<https://amcr.aiscr.cz/schema#ruian_katastr.hranice_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "hranice_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_katastr;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#ruian_katastr.definicni_bod_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "definicni_bod_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_katastr;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#ruian_katastr.nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_katastr;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_katastr.pian> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pian"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_katastr;
+    rdfs:range :pian.
+<https://amcr.aiscr.cz/schema#ruian_katastr.hranice_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "hranice_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_katastr;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+:hierarchie a owl:Class, rdfs:Class;
+    rdfs:label "hierarchie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+<https://amcr.aiscr.cz/schema#hierarchie.heslo_podrazene> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "heslo_podrazene"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :hierarchie;
+    rdfs:range :heslo.
+<https://amcr.aiscr.cz/schema#hierarchie.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :hierarchie;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#hierarchie.heslo_nadrazene> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "heslo_nadrazene"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :hierarchie;
+    rdfs:range :heslo.
+<https://amcr.aiscr.cz/schema#hierarchie.typ> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :hierarchie;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:dohlednost a owl:Class, rdfs:Class;
+    rdfs:label "dohlednost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:obdobi_kat a owl:Class, rdfs:Class;
+    rdfs:label "obdobi_kat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:lokalita_typ a owl:Class, rdfs:Class;
+    rdfs:label "lokalita_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:adb a owl:Class, rdfs:Class;
+    rdfs:label "adb"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :dokumentacni_jednotka.
+<https://amcr.aiscr.cz/schema#adb.dokumentacni_jednotka> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokumentacni_jednotka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range :dokumentacni_jednotka.
+<https://amcr.aiscr.cz/schema#adb.pristupnost_pom> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pristupnost_pom"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range :pristupnost.
+<https://amcr.aiscr.cz/schema#adb.chranene_udaje> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range <https://amcr.aiscr.cz/schema#chranene_udaje.adb>.
+<https://amcr.aiscr.cz/schema#adb.podnet> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "podnet"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range :adb_podnet.
+<https://amcr.aiscr.cz/schema#adb.autor_popisu> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "autor_popisu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#adb.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#adb.rok_popisu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_popisu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#adb.typ_sondy> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ_sondy"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range :adb_typ.
+<https://amcr.aiscr.cz/schema#adb.rok_revize> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_revize"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#adb.autor_revize> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "autor_revize"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#adb.stav_pom> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "stav_pom"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#adb.stratigraficke_jednotky> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "stratigraficke_jednotky"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#adb.sm5> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "sm5"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:ruian_kraj a owl:Class, rdfs:Class;
+    rdfs:label "ruian_kraj"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#ruian_kraj.nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_kraj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_kraj.hranice_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "hranice_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_kraj;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#ruian_kraj.kod> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "kod"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_kraj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_kraj.definicni_bod_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "definicni_bod_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_kraj;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#ruian_kraj.definicni_bod_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "definicni_bod_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_kraj;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#ruian_kraj.rada_id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rada_id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_kraj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_kraj.email> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "email"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_kraj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_kraj.nazev_en> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev_en"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_kraj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ruian_kraj.hranice_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "hranice_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ruian_kraj;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+:lokalita_druh_kat a owl:Class, rdfs:Class;
+    rdfs:label "lokalita_druh_kat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :lokalita_typ.
+:historie a owl:Class, rdfs:Class;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#historie.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :historie;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#historie.uzivatel> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "uzivatel"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :historie;
+    rdfs:range :uzivatel.
+<https://amcr.aiscr.cz/schema#historie.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :historie;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#historie.datum_zmeny> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_zmeny"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :historie;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#dateTime>.
+<https://amcr.aiscr.cz/schema#historie.typ_zmeny> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "typ_zmeny"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :historie;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:ext_zdroj_typ a owl:Class, rdfs:Class;
+    rdfs:label "ext_zdroj_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:odkaz a owl:Class, rdfs:Class;
+    rdfs:label "odkaz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+<https://amcr.aiscr.cz/schema#odkaz.kod> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "kod"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :odkaz;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#odkaz.zdroj> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "zdroj"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :odkaz;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#odkaz.scheme_uri> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "scheme_uri"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :odkaz;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#odkaz.skos_mapping_relation> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "skos_mapping_relation"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :odkaz;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#odkaz.uri> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "uri"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :odkaz;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#odkaz.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :odkaz;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#odkaz.nazev_kodu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev_kodu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :odkaz;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:nalez_typ a owl:Class, rdfs:Class;
+    rdfs:label "nalez_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:areal_kat a owl:Class, rdfs:Class;
+    rdfs:label "areal_kat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:vedouci_akce_ostatni a owl:Class, rdfs:Class;
+    rdfs:label "vedouci_akce_ostatni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :osoba.
+<https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.vedouci> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "vedouci"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :vedouci_akce_ostatni;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.organizace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :vedouci_akce_ostatni;
+    rdfs:range :organizace.
+<https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :vedouci_akce_ostatni;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:dokument_format a owl:Class, rdfs:Class;
+    rdfs:label "dokument_format"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:dokument_typ_material_rada a owl:Class, rdfs:Class;
+    rdfs:label "dokument_typ_material_rada"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :dokument_rada.
+<https://amcr.aiscr.cz/schema#dokument_typ_material_rada.dokument_material> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokument_material"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument_typ_material_rada;
+    rdfs:range :dokument_material.
+<https://amcr.aiscr.cz/schema#dokument_typ_material_rada.dokument_typ> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokument_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument_typ_material_rada;
+    rdfs:range :dokument_typ.
+<https://amcr.aiscr.cz/schema#dokument_typ_material_rada.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument_typ_material_rada;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:dokument_cast a owl:Class, rdfs:Class;
+    rdfs:label "dokument_cast"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :dokument.
+<https://amcr.aiscr.cz/schema#dokument_cast.neident_akce> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "neident_akce"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument_cast;
+    rdfs:range :neident_akce.
+<https://amcr.aiscr.cz/schema#dokument_cast.projekt> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "projekt"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument_cast;
+    rdfs:range :projekt.
+<https://amcr.aiscr.cz/schema#dokument_cast.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument_cast;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#dokument_cast.archeologicky_zaznam> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "archeologicky_zaznam"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument_cast;
+    rdfs:range :archeologicky_zaznam.
+<https://amcr.aiscr.cz/schema#dokument_cast.komponenta> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "komponenta"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument_cast;
+    rdfs:range :komponenta.
+<https://amcr.aiscr.cz/schema#dokument_cast.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument_cast;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:akce_typ_kat a owl:Class, rdfs:Class;
+    rdfs:label "akce_typ_kat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:posudek_typ_kat a owl:Class, rdfs:Class;
+    rdfs:label "posudek_typ_kat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:obdobi a owl:Class, rdfs:Class;
+    rdfs:label "obdobi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :obdobi_kat.
+:tvar a owl:Class, rdfs:Class;
+    rdfs:label "tvar"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#tvar.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :tvar;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#tvar.tvar> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "tvar"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :tvar;
+    rdfs:range :letfoto_tvar.
+<https://amcr.aiscr.cz/schema#tvar.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :tvar;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:oznamovatel a owl:Class, rdfs:Class;
+    rdfs:label "oznamovatel"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#oznamovatel.odpovedna_osoba> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "odpovedna_osoba"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :oznamovatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#oznamovatel.adresa> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "adresa"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :oznamovatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#oznamovatel.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :oznamovatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#oznamovatel.telefon> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "telefon"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :oznamovatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#oznamovatel.oznamovatel> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "oznamovatel"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :oznamovatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#oznamovatel.email> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "email"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :oznamovatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:dokument_nahrada a owl:Class, rdfs:Class;
+    rdfs:label "dokument_nahrada"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:objekt_specifikace_kat a owl:Class, rdfs:Class;
+    rdfs:label "objekt_specifikace_kat"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :nalez_typ.
+:letiste a owl:Class, rdfs:Class;
+    rdfs:label "letiste"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+<https://amcr.aiscr.cz/schema#chranene_udaje.pian> a owl:Class, rdfs:Class;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :chranene_udaje, :pian.
+<https://amcr.aiscr.cz/schema#pian.geom_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.pian>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#pian.zm10> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "zm10"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.pian>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#pian.geom_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.pian>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#pian.geom_sjtsk_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_sjtsk_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.pian>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#pian.geom_sjtsk_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_sjtsk_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.pian>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+:jistota_urceni a owl:Class, rdfs:Class;
+    rdfs:label "jistota_urceni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:dok_jednotka_typ a owl:Class, rdfs:Class;
+    rdfs:label "dok_jednotka_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:lokalita_druh a owl:Class, rdfs:Class;
+    rdfs:label "lokalita_druh"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :lokalita_druh_kat.
+:hlidaci_pes a owl:Class, rdfs:Class;
+    rdfs:label "hlidaci_pes"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#hlidaci_pes.okres> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "okres"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :hlidaci_pes;
+    rdfs:range :ruian_okres.
+<https://amcr.aiscr.cz/schema#hlidaci_pes.katastr> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "katastr"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :hlidaci_pes;
+    rdfs:range :ruian_katastr.
+<https://amcr.aiscr.cz/schema#hlidaci_pes.kraj> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "kraj"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :hlidaci_pes;
+    rdfs:range :ruian_kraj.
+:archeologicky_zaznam a owl:Class, rdfs:Class;
+    rdfs:label "archeologicky_zaznam"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.lokalita> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "lokalita"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range :lokalita.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.akce> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "akce"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range :akce.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.dokument> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokument"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range :dokument.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.historie> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range :historie.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.ext_odkaz> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "ext_odkaz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range :ext_odkaz.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.stav> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "stav"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.pristupnost> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pristupnost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range :pristupnost.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.dokumentacni_jednotka> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokumentacni_jednotka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range :dokumentacni_jednotka.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.okres> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "okres"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range :ruian_okres.
+<https://amcr.aiscr.cz/schema#archeologicky_zaznam.chranene_udaje> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :archeologicky_zaznam;
+    rdfs:range <https://amcr.aiscr.cz/schema#chranene_udaje.archeologicky_zaznam>.
+:projekt a owl:Class, rdfs:Class;
+    rdfs:label "projekt"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#projekt.pristupnost_pom> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pristupnost_pom"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :pristupnost.
+<https://amcr.aiscr.cz/schema#projekt.vedouci_projektu> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "vedouci_projektu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#projekt.oznamovatel> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "oznamovatel"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :oznamovatel.
+<https://amcr.aiscr.cz/schema#projekt.okres> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "okres"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :ruian_okres.
+<https://amcr.aiscr.cz/schema#projekt.archeologicky_zaznam> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "archeologicky_zaznam"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :archeologicky_zaznam.
+<https://amcr.aiscr.cz/schema#projekt.historie> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :historie.
+<https://amcr.aiscr.cz/schema#projekt.stav> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "stav"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#projekt.soubor> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "soubor"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :soubor.
+<https://amcr.aiscr.cz/schema#projekt.planovane_zahajeni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "planovane_zahajeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#projekt.typ_projektu> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ_projektu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :projekt_typ.
+<https://amcr.aiscr.cz/schema#projekt.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#projekt.geom_system> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_system"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#projekt.dokument> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokument"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :dokument.
+<https://amcr.aiscr.cz/schema#projekt.datum_ukonceni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_ukonceni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+<https://amcr.aiscr.cz/schema#projekt.samostatny_nalez> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "samostatny_nalez"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :samostatny_nalez.
+<https://amcr.aiscr.cz/schema#projekt.oznaceni_stavby> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "oznaceni_stavby"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#projekt.termin_odevzdani_nz> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "termin_odevzdani_nz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+<https://amcr.aiscr.cz/schema#projekt.kulturni_pamatka> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "kulturni_pamatka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :pamatkova_ochrana.
+<https://amcr.aiscr.cz/schema#projekt.podnet> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "podnet"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#projekt.chranene_udaje> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>.
+<https://amcr.aiscr.cz/schema#projekt.uzivatelske_oznaceni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "uzivatelske_oznaceni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#projekt.organizace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range :organizace.
+<https://amcr.aiscr.cz/schema#projekt.datum_zahajeni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_zahajeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :projekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+:areal a owl:Class, rdfs:Class;
+    rdfs:label "areal"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :areal_kat.
+:pamatkova_ochrana a owl:Class, rdfs:Class;
+    rdfs:label "pamatkova_ochrana"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:pian_typ a owl:Class, rdfs:Class;
+    rdfs:label "pian_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:heslo a owl:Class, rdfs:Class;
+    rdfs:label "heslo"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#heslo.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#heslo.heslo> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "heslo"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#heslo.dokument_typ_material_rada> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokument_typ_material_rada"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range :dokument_typ_material_rada.
+<https://amcr.aiscr.cz/schema#heslo.zkratka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "zkratka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#heslo.popis> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "popis"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#heslo.odkaz> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "odkaz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range :odkaz.
+<https://amcr.aiscr.cz/schema#heslo.razeni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "razeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#heslo.hierarchie_vyse> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "hierarchie_vyse"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range :hierarchie.
+<https://amcr.aiscr.cz/schema#heslo.nazev_heslare> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev_heslare"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#heslo.popis_en> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "popis_en"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#heslo.heslo_en> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "heslo_en"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#heslo.hierarchie_nize> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "hierarchie_nize"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range :hierarchie.
+<https://amcr.aiscr.cz/schema#heslo.datace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "datace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :heslo;
+    rdfs:range :datace.
+:dokument_rada a owl:Class, rdfs:Class;
+    rdfs:label "dokument_rada"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:pristupnost a owl:Class, rdfs:Class;
+    rdfs:label "pristupnost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:organizace_typ a owl:Class, rdfs:Class;
+    rdfs:label "organizace_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:uzivatel a owl:Class, rdfs:Class;
+    rdfs:label "uzivatel"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :osoba.
+<https://amcr.aiscr.cz/schema#uzivatel.telefon> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "telefon"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#uzivatel.aktivni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "aktivni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#uzivatel.spoluprace_podrizeni> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "spoluprace_podrizeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range :spoluprace.
+<https://amcr.aiscr.cz/schema#uzivatel.email> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "email"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#uzivatel.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#uzivatel.orcid> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "orcid"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.
+<https://amcr.aiscr.cz/schema#uzivatel.notifikace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "notifikace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#uzivatel.datum_registrace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_registrace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#dateTime>.
+<https://amcr.aiscr.cz/schema#uzivatel.jazyk> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "jazyk"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#uzivatel.jmeno> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "jmeno"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#uzivatel.skupina> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "skupina"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#uzivatel.historie> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range :historie.
+<https://amcr.aiscr.cz/schema#uzivatel.hlidaci_pes> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "hlidaci_pes"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range :hlidaci_pes.
+<https://amcr.aiscr.cz/schema#uzivatel.admin> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "admin"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#uzivatel.prijmeni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "prijmeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#uzivatel.organizace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range :organizace.
+<https://amcr.aiscr.cz/schema#uzivatel.superadmin> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "superadmin"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#uzivatel.spoluprace_nadrizeni> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "spoluprace_nadrizeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range :spoluprace.
+<https://amcr.aiscr.cz/schema#uzivatel.osoba> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "osoba"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :uzivatel;
+    rdfs:range :osoba.
+:dokument_licence a owl:Class, rdfs:Class;
+    rdfs:label "dokument_licence"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:pian a owl:Class, rdfs:Class;
+    rdfs:label "pian"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#pian.chranene_udaje> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :pian;
+    rdfs:range <https://amcr.aiscr.cz/schema#chranene_udaje.pian>.
+<https://amcr.aiscr.cz/schema#pian.historie> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :pian;
+    rdfs:range :historie.
+<https://amcr.aiscr.cz/schema#pian.typ> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :pian;
+    rdfs:range :pian_typ.
+<https://amcr.aiscr.cz/schema#pian.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :pian;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#pian.pristupnost_pom> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pristupnost_pom"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :pian;
+    rdfs:range :pristupnost.
+<https://amcr.aiscr.cz/schema#pian.geom_system> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_system"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :pian;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#pian.stav> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "stav"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :pian;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#pian.dokumentacni_jednotka> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokumentacni_jednotka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :pian;
+    rdfs:range :dokumentacni_jednotka.
+<https://amcr.aiscr.cz/schema#pian.presnost> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "presnost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :pian;
+    rdfs:range :pian_presnost.
+:projekt_typ a owl:Class, rdfs:Class;
+    rdfs:label "projekt_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:nalez_objekt a owl:Class, rdfs:Class;
+    rdfs:label "nalez_objekt"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :komponenta.
+<https://amcr.aiscr.cz/schema#nalez_objekt.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_objekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#nalez_objekt.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_objekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#nalez_objekt.pocet> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "pocet"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_objekt;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#nalez_objekt.specifikace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "specifikace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_objekt;
+    rdfs:range :objekt_specifikace.
+<https://amcr.aiscr.cz/schema#nalez_objekt.druh> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "druh"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :nalez_objekt;
+    rdfs:range :objekt_druh.
+:dokument_typ a owl:Class, rdfs:Class;
+    rdfs:label "dokument_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:neident_akce a owl:Class, rdfs:Class;
+    rdfs:label "neident_akce"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#neident_akce.pian> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "pian"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :neident_akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#neident_akce.lokalizace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "lokalizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :neident_akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#neident_akce.rok_zahajeni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_zahajeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :neident_akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#neident_akce.popis> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "popis"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :neident_akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#neident_akce.katastr> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "katastr"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :neident_akce;
+    rdfs:range :ruian_katastr.
+<https://amcr.aiscr.cz/schema#neident_akce.rok_ukonceni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_ukonceni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :neident_akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#neident_akce.vedouci> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "vedouci"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :neident_akce;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#neident_akce.okres> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "okres"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :neident_akce;
+    rdfs:range :ruian_okres.
+<https://amcr.aiscr.cz/schema#neident_akce.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :neident_akce;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:datace a owl:Class, rdfs:Class;
+    rdfs:label "datace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :obdobi.
+<https://amcr.aiscr.cz/schema#datace.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :datace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#datace.rok_od_min> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_od_min"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :datace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#datace.rok_do_min> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_do_min"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :datace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#datace.rok_do_max> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_do_max"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :datace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#datace.rok_od_max> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_od_max"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :datace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+:adb_podnet a owl:Class, rdfs:Class;
+    rdfs:label "adb_podnet"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:dokumentacni_jednotka a owl:Class, rdfs:Class;
+    rdfs:label "dokumentacni_jednotka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :pian.
+<https://amcr.aiscr.cz/schema#dokumentacni_jednotka.negativni_jednotka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "negativni_jednotka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokumentacni_jednotka;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#dokumentacni_jednotka.pian> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pian"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokumentacni_jednotka;
+    rdfs:range :pian.
+<https://amcr.aiscr.cz/schema#dokumentacni_jednotka.typ> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokumentacni_jednotka;
+    rdfs:range :dok_jednotka_typ.
+<https://amcr.aiscr.cz/schema#dokumentacni_jednotka.nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokumentacni_jednotka;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#dokumentacni_jednotka.komponenta> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "komponenta"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokumentacni_jednotka;
+    rdfs:range :komponenta.
+<https://amcr.aiscr.cz/schema#dokumentacni_jednotka.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokumentacni_jednotka;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#dokumentacni_jednotka.adb> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "adb"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokumentacni_jednotka;
+    rdfs:range :adb.
+:ext_zdroj a owl:Class, rdfs:Class;
+    rdfs:label "ext_zdroj"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.isbn> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "isbn"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.casopis_denik_nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "casopis_denik_nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.organizace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.autor> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "autor"@en;
+    rdfs:comment "poradi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#ext_zdroj.datum_rd> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_rd"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.typ> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range :ext_zdroj_typ.
+<https://amcr.aiscr.cz/schema#ext_zdroj.rok_vydani_vzniku> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_vydani_vzniku"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.doi> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "doi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.editor> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "editor"@en;
+    rdfs:comment "poradi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#ext_zdroj.historie> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range :historie.
+<https://amcr.aiscr.cz/schema#ext_zdroj.misto> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "misto"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.vydavatel> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "vydavatel"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.sbornik_nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "sbornik_nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.casopis_rocnik> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "casopis_rocnik"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.edice_rada> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "edice_rada"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.stav> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "stav"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.typ_dokumentu> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ_dokumentu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range :dokument_typ.
+<https://amcr.aiscr.cz/schema#ext_zdroj.issn> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "issn"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.ext_odkaz> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "ext_odkaz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range :ext_odkaz.
+<https://amcr.aiscr.cz/schema#ext_zdroj.link> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "link"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_zdroj.paginace_titulu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "paginace_titulu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_zdroj;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:pian_presnost a owl:Class, rdfs:Class;
+    rdfs:label "pian_presnost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:aktivita a owl:Class, rdfs:Class;
+    rdfs:label "aktivita"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+<https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez> a owl:Class, rdfs:Class;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :chranene_udaje, :samostatny_nalez.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.geom_sjtsk_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_sjtsk_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.geom_sjtsk_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_sjtsk_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.lokalizace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "lokalizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.katastr> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "katastr"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez>;
+    rdfs:range :ruian_katastr.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.geom_wkt> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_wkt"@en;
+    rdfs:comment "EPSG"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.geom_gml> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_gml"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez>;
+    rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+:akce_typ a owl:Class, rdfs:Class;
+    rdfs:label "akce_typ"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :akce_typ_kat.
+:komponenta a owl:Class, rdfs:Class;
+    rdfs:label "komponenta"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#komponenta.nalez_objekt> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "nalez_objekt"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :komponenta;
+    rdfs:range :nalez_objekt.
+<https://amcr.aiscr.cz/schema#komponenta.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :komponenta;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#komponenta.jistota> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "jistota"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :komponenta;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://amcr.aiscr.cz/schema#komponenta.presna_datace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "presna_datace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :komponenta;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#komponenta.areal> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "areal"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :komponenta;
+    rdfs:range :areal.
+<https://amcr.aiscr.cz/schema#komponenta.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :komponenta;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#komponenta.nalez_predmet> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "nalez_predmet"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :komponenta;
+    rdfs:range :nalez_predmet.
+<https://amcr.aiscr.cz/schema#komponenta.aktivita> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "aktivita"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :komponenta;
+    rdfs:range :aktivita.
+<https://amcr.aiscr.cz/schema#komponenta.obdobi> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "obdobi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :komponenta;
+    rdfs:range :obdobi.
+:datum_specifikace a owl:Class, rdfs:Class;
+    rdfs:label "datum_specifikace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:predmet_specifikace a owl:Class, rdfs:Class;
+    rdfs:label "predmet_specifikace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :nalez_typ.
+:ext_odkaz a owl:Class, rdfs:Class;
+    rdfs:label "ext_odkaz"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :ext_zdroj.
+<https://amcr.aiscr.cz/schema#ext_odkaz.archeologicky_zaznam> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "archeologicky_zaznam"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_odkaz;
+    rdfs:range :archeologicky_zaznam.
+<https://amcr.aiscr.cz/schema#ext_odkaz.ext_zdroj> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "ext_zdroj"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_odkaz;
+    rdfs:range :ext_zdroj.
+<https://amcr.aiscr.cz/schema#ext_odkaz.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_odkaz;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#ext_odkaz.paginace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "paginace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :ext_odkaz;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:nalezove_okolnosti a owl:Class, rdfs:Class;
+    rdfs:label "nalezove_okolnosti"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:dokument a owl:Class, rdfs:Class;
+    rdfs:label "dokument"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#dokument.oznaceni_originalu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "oznaceni_originalu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#dokument.doi> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "doi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#dokument.osoba> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "osoba"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#dokument.datum_zverejneni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_zverejneni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+<https://amcr.aiscr.cz/schema#dokument.dokument_cast> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "dokument_cast"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :dokument_cast.
+<https://amcr.aiscr.cz/schema#dokument.autor> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "autor"@en;
+    rdfs:comment "poradi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#dokument.rok_vzniku> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_vzniku"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#dokument.rada> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "rada"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :dokument_rada.
+<https://amcr.aiscr.cz/schema#dokument.tvar> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "tvar"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :tvar.
+<https://amcr.aiscr.cz/schema#dokument.ulozeni_originalu> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "ulozeni_originalu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :dokument_ulozeni.
+<https://amcr.aiscr.cz/schema#dokument.organizace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :organizace.
+<https://amcr.aiscr.cz/schema#dokument.historie> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :historie.
+<https://amcr.aiscr.cz/schema#dokument.posudek> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "posudek"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :posudek_typ.
+<https://amcr.aiscr.cz/schema#dokument.typ_dokumentu> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "typ_dokumentu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :dokument_typ.
+<https://amcr.aiscr.cz/schema#dokument.pristupnost> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pristupnost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :pristupnost.
+<https://amcr.aiscr.cz/schema#dokument.popis> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "popis"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#dokument.stav> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "stav"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#dokument.jazyk_dokumentu> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "jazyk_dokumentu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :jazyk.
+<https://amcr.aiscr.cz/schema#dokument.material_originalu> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "material_originalu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :dokument_material.
+<https://amcr.aiscr.cz/schema#dokument.licence> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "licence"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :dokument_licence.
+<https://amcr.aiscr.cz/schema#dokument.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#dokument.extra_data> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "extra_data"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :extra_data.
+<https://amcr.aiscr.cz/schema#dokument.soubor> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "soubor"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :soubor.
+<https://amcr.aiscr.cz/schema#dokument.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#dokument.let> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "let"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :dokument;
+    rdfs:range :let.
+:stav_dochovani a owl:Class, rdfs:Class;
+    rdfs:label "stav_dochovani"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :heslo.
+:spoluprace a owl:Class, rdfs:Class;
+    rdfs:label "spoluprace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#spoluprace.id> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "id"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :spoluprace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#spoluprace.stav> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "stav"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :spoluprace;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#spoluprace.historie> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :spoluprace;
+    rdfs:range :historie.
+<https://amcr.aiscr.cz/schema#spoluprace.spolupracovnik> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "spolupracovnik"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :spoluprace;
+    rdfs:range :uzivatel.
+<https://amcr.aiscr.cz/schema#spoluprace.vedouci> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "vedouci"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :spoluprace;
+    rdfs:range :uzivatel.
+<https://amcr.aiscr.cz/schema#chranene_udaje.lokalita> a owl:Class, rdfs:Class;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :chranene_udaje, :lokalita.
+<https://amcr.aiscr.cz/schema#lokalita.nazev> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "nazev"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.lokalita>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#lokalita.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.lokalita>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#lokalita.popis> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "popis"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.lokalita>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:objekt_druh a owl:Class, rdfs:Class;
+    rdfs:label "objekt_druh"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :objekt_druh_kat.
+:samostatny_nalez a owl:Class, rdfs:Class;
+    rdfs:label "samostatny_nalez"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.historie> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "historie"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :historie.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.druh_nalezu> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "druh_nalezu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :predmet_druh.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.nalezce> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "nalezce"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.pristupnost> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "pristupnost"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :pristupnost.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.okres> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "okres"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :ruian_okres.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.okolnosti> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "okolnosti"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :nalezove_okolnosti.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.pocet> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "pocet"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.presna_datace> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "presna_datace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.stav> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "stav"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.hloubka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "hloubka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.chranene_udaje> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "chranene_udaje"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.predano_organizace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "predano_organizace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :organizace.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.projekt> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "projekt"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :projekt.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.soubor> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "soubor"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :soubor.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.evidencni_cislo> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "evidencni_cislo"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.specifikace> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "specifikace"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :predmet_specifikace.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.geom_system> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "geom_system"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.datum_nalezu> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "datum_nalezu"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#date>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.obdobi> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "obdobi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range :obdobi.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.poznamka> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poznamka"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.igsn> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "igsn"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#samostatny_nalez.predano> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "predano"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :samostatny_nalez;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+:osoba a owl:Class, rdfs:Class;
+    rdfs:label "osoba"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
+<https://amcr.aiscr.cz/schema#osoba.rok_narozeni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_narozeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#osoba.rodne_prijmeni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rodne_prijmeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#osoba.vypis_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "vypis_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#osoba.jmeno> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "jmeno"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#osoba.ident_cely> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#osoba.prijmeni> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "prijmeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#osoba.vypis> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "vypis"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#osoba.orcid> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "orcid"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.
+<https://amcr.aiscr.cz/schema#osoba.rok_umrti> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "rok_umrti"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#osoba.wikidata> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "wikidata"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :osoba;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.

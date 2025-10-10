@@ -1,4 +1,9 @@
-## Dataspecer vocabularies for mapping of AMCR vocabs to CCMM
+## AMCR-related Dataspecer vocabularies and mappings
+
+### Dataspecer
+
+- https://dataspecer.com/
+- Demo: https://demo.dataspecer.com/
 
 ### CCMM
 
@@ -6,12 +11,12 @@
 - Repo: https://github.com/techlib/CCMM
 - Řízené slovníky: https://github.com/techlib/CCMM-controlled-vocab
 
-### Dataspecer
+### Published vocabs/ontologies
 
-- https://dataspecer.com/
-- Demo: https://demo.dataspecer.com/
+#### AMCR
 
-### Mapped vocabs/Ontologies
+- https://github.com/ARUP-CAS/aiscr-webamcr/tree/dev/webclient/xml_generator/definitions
+- Mapping is based on the XSD defininition of the native AMCR schema used in OAI-PMH API responses (https://arup-cas.github.io/aiscr-api-home/oai-pmh/)
 
 #### CIDOC-CRM
 
