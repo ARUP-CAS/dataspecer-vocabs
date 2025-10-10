@@ -148,6 +148,7 @@
 <https://amcr.aiscr.cz/schema#organizace.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :organizace;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#organizace.nazev_zkraceny_en> a rdf:Property, owl:DatatypeProperty;
@@ -432,6 +433,7 @@
 <https://amcr.aiscr.cz/schema#let.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :let;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#let.ucel_letu> a rdf:Property, owl:DatatypeProperty;
@@ -533,6 +535,7 @@
 <https://amcr.aiscr.cz/schema#vyskovy_bod.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :vyskovy_bod;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 :akce a owl:Class, rdfs:Class;
@@ -853,6 +856,7 @@
 <https://amcr.aiscr.cz/schema#adb.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :adb;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#adb.rok_popisu> a rdf:Property, owl:DatatypeProperty;
@@ -1082,6 +1086,7 @@
 <https://amcr.aiscr.cz/schema#dokument_cast.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :dokument_cast;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#dokument_cast.archeologicky_zaznam> a rdf:Property, owl:ObjectProperty;
@@ -1266,6 +1271,7 @@
 <https://amcr.aiscr.cz/schema#archeologicky_zaznam.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :archeologicky_zaznam;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#archeologicky_zaznam.stav> a rdf:Property, owl:DatatypeProperty;
@@ -1349,6 +1355,7 @@
 <https://amcr.aiscr.cz/schema#projekt.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :projekt;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#projekt.geom_system> a rdf:Property, owl:DatatypeProperty;
@@ -1429,6 +1436,7 @@
 <https://amcr.aiscr.cz/schema#heslo.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :heslo;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#heslo.heslo> a rdf:Property, owl:DatatypeProperty;
@@ -1530,6 +1538,7 @@
 <https://amcr.aiscr.cz/schema#uzivatel.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :uzivatel;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#uzivatel.orcid> a rdf:Property, owl:DatatypeProperty;
@@ -1627,6 +1636,7 @@
 <https://amcr.aiscr.cz/schema#pian.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :pian;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#pian.pristupnost_pom> a rdf:Property, owl:ObjectProperty;
@@ -1804,6 +1814,7 @@
 <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :dokumentacni_jednotka;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.adb> a rdf:Property, owl:ObjectProperty;
@@ -1884,6 +1895,7 @@
 <https://amcr.aiscr.cz/schema#ext_zdroj.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :ext_zdroj;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#ext_zdroj.vydavatel> a rdf:Property, owl:DatatypeProperty;
@@ -2015,6 +2027,7 @@
 <https://amcr.aiscr.cz/schema#komponenta.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :komponenta;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#komponenta.nalez_predmet> a rdf:Property, owl:ObjectProperty;
@@ -2175,6 +2188,7 @@
 <https://amcr.aiscr.cz/schema#dokument.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :dokument;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#dokument.extra_data> a rdf:Property, owl:ObjectProperty;
@@ -2353,6 +2367,7 @@
 <https://amcr.aiscr.cz/schema#samostatny_nalez.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :samostatny_nalez;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#samostatny_nalez.poznamka> a rdf:Property, owl:DatatypeProperty;
@@ -2396,6 +2411,7 @@
 <https://amcr.aiscr.cz/schema#osoba.ident_cely> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subPropertyOf :ident_cely;
     rdfs:domain :osoba;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#osoba.prijmeni> a rdf:Property, owl:DatatypeProperty;
@@ -2423,3 +2439,8 @@
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :osoba;
     rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.
+:ident_cely a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "1ident_cely"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://www.w3.org/2002/07/owl#Thing>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
