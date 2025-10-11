@@ -195,6 +195,15 @@
     rdfs:label "udalost_typ"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:subClassOf :heslo.
+:hierarchie_vyse a owl:Class, rdfs:Class;
+    rdfs:label "hierarchie_vyse"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :hierarchie.
+<https://amcr.aiscr.cz/schema#hierarchie_vyse.heslo_nadrazene> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "heslo_nadrazene"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :hierarchie_vyse;
+    rdfs:range :heslo.
 :letfoto_tvar a owl:Class, rdfs:Class;
     rdfs:label "letfoto_tvar"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -790,23 +799,12 @@
     rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
 :hierarchie a owl:Class, rdfs:Class;
     rdfs:label "hierarchie"@en;
-    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
-    rdfs:subClassOf :heslo.
-<https://amcr.aiscr.cz/schema#hierarchie.heslo_podrazene> a rdf:Property, owl:ObjectProperty;
-    rdfs:label "heslo_podrazene"@en;
-    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
-    rdfs:domain :hierarchie;
-    rdfs:range :heslo.
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
 <https://amcr.aiscr.cz/schema#hierarchie.id> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "id"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :hierarchie;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
-<https://amcr.aiscr.cz/schema#hierarchie.heslo_nadrazene> a rdf:Property, owl:ObjectProperty;
-    rdfs:label "heslo_nadrazene"@en;
-    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
-    rdfs:domain :hierarchie;
-    rdfs:range :heslo.
 <https://amcr.aiscr.cz/schema#hierarchie.typ> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "typ"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -1046,6 +1044,15 @@
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :vedouci_akce_ostatni;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+:spoluprace_nadrizeni a owl:Class, rdfs:Class;
+    rdfs:label "spoluprace_nadrizeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :spoluprace.
+<https://amcr.aiscr.cz/schema#spoluprace_nadrizeni.vedouci> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "vedouci"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :spoluprace_nadrizeni;
+    rdfs:range :uzivatel.
 :dokument_format a owl:Class, rdfs:Class;
     rdfs:label "dokument_format"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -1473,7 +1480,7 @@
     rdfs:label "hierarchie_vyse"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :heslo;
-    rdfs:range :hierarchie.
+    rdfs:range :hierarchie_vyse.
 <https://amcr.aiscr.cz/schema#heslo.nazev_heslare> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "nazev_heslare"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -1493,7 +1500,7 @@
     rdfs:label "hierarchie_nize"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :heslo;
-    rdfs:range :hierarchie.
+    rdfs:range :hierarchie_nize.
 <https://amcr.aiscr.cz/schema#heslo.datace> a rdf:Property, owl:ObjectProperty;
     rdfs:label "datace"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -1701,6 +1708,15 @@
     rdfs:label "dokument_typ"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:subClassOf :heslo.
+:spoluprace_podrizeni a owl:Class, rdfs:Class;
+    rdfs:label "spoluprace_podrizeni"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :spoluprace.
+<https://amcr.aiscr.cz/schema#spoluprace_podrizeni.spolupracovnik> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "spolupracovnik"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :spoluprace_podrizeni;
+    rdfs:range :uzivatel.
 :neident_akce a owl:Class, rdfs:Class;
     rdfs:label "neident_akce"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
@@ -2215,6 +2231,15 @@
     rdfs:label "stav_dochovani"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:subClassOf :heslo.
+:hierarchie_nize a owl:Class, rdfs:Class;
+    rdfs:label "hierarchie_nize"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :hierarchie.
+<https://amcr.aiscr.cz/schema#hierarchie_nize.heslo_podrazene> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "heslo_podrazene"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :hierarchie_nize;
+    rdfs:range :heslo.
 :spoluprace a owl:Class, rdfs:Class;
     rdfs:label "spoluprace"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
@@ -2233,16 +2258,6 @@
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :spoluprace;
     rdfs:range :historie.
-<https://amcr.aiscr.cz/schema#spoluprace.spolupracovnik> a rdf:Property, owl:ObjectProperty;
-    rdfs:label "spolupracovnik"@en;
-    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
-    rdfs:domain :spoluprace;
-    rdfs:range :uzivatel.
-<https://amcr.aiscr.cz/schema#spoluprace.vedouci> a rdf:Property, owl:ObjectProperty;
-    rdfs:label "vedouci"@en;
-    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
-    rdfs:domain :spoluprace;
-    rdfs:range :uzivatel.
 <https://amcr.aiscr.cz/schema#chranene_udaje.lokalita> a owl:Class, rdfs:Class;
     rdfs:label "chranene_udaje"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -2440,7 +2455,7 @@
     rdfs:domain :osoba;
     rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.
 :ident_cely a rdf:Property, owl:DatatypeProperty;
-    rdfs:label "1ident_cely"@en;
+    rdfs:label "ident_cely"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain <https://www.w3.org/2002/07/owl#Thing>;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
