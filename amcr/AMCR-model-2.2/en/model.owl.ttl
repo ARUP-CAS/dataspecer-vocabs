@@ -292,7 +292,6 @@
     rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
 <https://amcr.aiscr.cz/schema#extra_data.geom_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "geom_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :extra_data;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -303,7 +302,6 @@
     rdfs:range :zeme.
 <https://amcr.aiscr.cz/schema#extra_data.geom_sjtsk_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "geom_sjtsk_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :extra_data;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -476,7 +474,6 @@
     rdfs:range :ruian_katastr.
 <https://amcr.aiscr.cz/schema#projekt.geom_sjtsk_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "geom_sjtsk_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -507,7 +504,6 @@
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#projekt.geom_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "geom_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.projekt>;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -532,7 +528,6 @@
     rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
 <https://amcr.aiscr.cz/schema#vyskovy_bod.geom_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "geom_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :vyskovy_bod;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -698,7 +693,6 @@
     rdfs:subClassOf :ruian_kraj.
 <https://amcr.aiscr.cz/schema#ruian_okres.definicni_bod_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "definicni_bod_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :ruian_okres;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -714,7 +708,6 @@
     rdfs:range :ruian_kraj.
 <https://amcr.aiscr.cz/schema#ruian_okres.hranice_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "hranice_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :ruian_okres;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -772,13 +765,11 @@
     rdfs:range :ruian_okres.
 <https://amcr.aiscr.cz/schema#ruian_katastr.hranice_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "hranice_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :ruian_katastr;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
 <https://amcr.aiscr.cz/schema#ruian_katastr.definicni_bod_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "definicni_bod_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :ruian_katastr;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -902,7 +893,6 @@
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#ruian_kraj.hranice_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "hranice_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :ruian_kraj;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -913,7 +903,6 @@
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#ruian_kraj.definicni_bod_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "definicni_bod_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :ruian_kraj;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -1192,7 +1181,6 @@
     rdfs:subClassOf :chranene_udaje, :pian.
 <https://amcr.aiscr.cz/schema#pian.geom_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "geom_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.pian>;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -1208,7 +1196,6 @@
     rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral>.
 <https://amcr.aiscr.cz/schema#pian.geom_sjtsk_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "geom_sjtsk_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.pian>;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -1675,6 +1662,20 @@
     rdfs:label "projekt_typ"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:subClassOf :heslo.
+:autor a owl:Class, rdfs:Class;
+    rdfs:label "autor"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:subClassOf :osoba.
+<https://amcr.aiscr.cz/schema#autor.osoba> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "osoba"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :autor;
+    rdfs:range :osoba.
+<https://amcr.aiscr.cz/schema#autor.poradi> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "poradi"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :autor;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
 :nalez_objekt a owl:Class, rdfs:Class;
     rdfs:label "nalez_objekt"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -1868,10 +1869,9 @@
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#ext_zdroj.autor> a rdf:Property, owl:ObjectProperty;
     rdfs:label "autor"@en;
-    rdfs:comment "poradi"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :ext_zdroj;
-    rdfs:range :osoba.
+    rdfs:range :autor.
 <https://amcr.aiscr.cz/schema#ext_zdroj.datum_rd> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "datum_rd"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -1894,10 +1894,9 @@
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
 <https://amcr.aiscr.cz/schema#ext_zdroj.editor> a rdf:Property, owl:ObjectProperty;
     rdfs:label "editor"@en;
-    rdfs:comment "poradi"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :ext_zdroj;
-    rdfs:range :osoba.
+    rdfs:range :autor.
 <https://amcr.aiscr.cz/schema#ext_zdroj.historie> a rdf:Property, owl:ObjectProperty;
     rdfs:label "historie"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -1978,7 +1977,6 @@
     rdfs:subClassOf :chranene_udaje, :samostatny_nalez.
 <https://amcr.aiscr.cz/schema#samostatny_nalez.geom_sjtsk_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "geom_sjtsk_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez>;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -1999,7 +1997,6 @@
     rdfs:range :ruian_katastr.
 <https://amcr.aiscr.cz/schema#samostatny_nalez.geom_wkt> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "geom_wkt"@en;
-    rdfs:comment "EPSG"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.samostatny_nalez>;
     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -2127,10 +2124,9 @@
     rdfs:range :dokument_cast.
 <https://amcr.aiscr.cz/schema#dokument.autor> a rdf:Property, owl:ObjectProperty;
     rdfs:label "autor"@en;
-    rdfs:comment "poradi"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :dokument;
-    rdfs:range :osoba.
+    rdfs:range :autor.
 <https://amcr.aiscr.cz/schema#dokument.rok_vzniku> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "rok_vzniku"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
