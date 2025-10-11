@@ -537,14 +537,14 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie>
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie_nize>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie>
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie_nize>
 ];
     a dsv:ClassProfile;
-    dsv:class <https://amcr.aiscr.cz/schema#hierarchie>.
+    dsv:class <https://amcr.aiscr.cz/schema#hierarchie_nize>.
 
 <\thttps://amcr.aiscr.cz/schema/profile#jazyk> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
@@ -1307,14 +1307,14 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace>
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace_nadrizeni>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace>
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace_nadrizeni>
 ];
     a dsv:ClassProfile;
-    dsv:class <https://amcr.aiscr.cz/schema#spoluprace>.
+    dsv:class <https://amcr.aiscr.cz/schema#spoluprace_nadrizeni>.
 
 <\thttps://amcr.aiscr.cz/schema/profile#tvar> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
@@ -1363,28 +1363,28 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie>
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie_vyse>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie>
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie_vyse>
 ];
     a dsv:ClassProfile;
-    dsv:class <https://amcr.aiscr.cz/schema#hierarchie>.
+    dsv:class <https://amcr.aiscr.cz/schema#hierarchie_vyse>.
 
 <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace>
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace_podrizeni>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace>
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace_podrizeni>
 ];
     a dsv:ClassProfile;
-    dsv:class <https://amcr.aiscr.cz/schema#spoluprace>.
+    dsv:class <https://amcr.aiscr.cz/schema#spoluprace_podrizeni>.
 
 <\thttps://amcr.aiscr.cz/schema/profile#spoluprace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
@@ -2029,42 +2029,6 @@
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#dokument_format>.
-
-<\thttps://amcr.aiscr.cz/schema/profile#hierarchie_vyse.heslo_nadrazene> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
-    a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.heslo_nadrazene>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.heslo_nadrazene>
-];
-    dsv:cardinality cardinality:11;
-    dsv:property <https://amcr.aiscr.cz/schema#hierarchie.heslo_nadrazene>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#hierarchie_vyse>;
-    dsv:requirementLevel requirement:mandatory;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#heslo>.
-
-<\thttps://amcr.aiscr.cz/schema/profile#hierarchie_nize.heslo_podrazene> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
-    a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.heslo_podrazene>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.heslo_podrazene>
-];
-    dsv:cardinality cardinality:11;
-    dsv:property <https://amcr.aiscr.cz/schema#hierarchie.heslo_podrazene>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#hierarchie_nize>;
-    dsv:requirementLevel requirement:mandatory;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#heslo>.
 
 <\thttps://amcr.aiscr.cz/schema/profile#heslo.hierarchie_nize> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
@@ -4637,42 +4601,6 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni>.
 
-<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni.spolupracovnik> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
-    a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.spolupracovnik>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.spolupracovnik>
-];
-    dsv:cardinality cardinality:11;
-    dsv:property <https://amcr.aiscr.cz/schema#spoluprace.spolupracovnik>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni>;
-    dsv:requirementLevel requirement:mandatory;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>.
-
-<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni.vedouci> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
-    a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.vedouci>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.vedouci>
-];
-    dsv:cardinality cardinality:11;
-    dsv:property <https://amcr.aiscr.cz/schema#spoluprace.vedouci>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni>;
-    dsv:requirementLevel requirement:mandatory;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>.
-
 <\thttps://amcr.aiscr.cz/schema/profile#tvar.tvar> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
@@ -5104,6 +5032,78 @@
     dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#pristupnost>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#hierarchie_vyse.heslo_nadrazene> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie_vyse.heslo_nadrazene>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie_vyse.heslo_nadrazene>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#hierarchie_vyse.heslo_nadrazene>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#hierarchie_vyse>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#heslo>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#hierarchie_nize.heslo_podrazene> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie_nize.heslo_podrazene>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie_nize.heslo_podrazene>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#hierarchie_nize.heslo_podrazene>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#hierarchie_nize>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#heslo>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni.spolupracovnik> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace_podrizeni.spolupracovnik>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace_podrizeni.spolupracovnik>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#spoluprace_podrizeni.spolupracovnik>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni.vedouci> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace_nadrizeni.vedouci>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace_nadrizeni.vedouci>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#spoluprace_nadrizeni.vedouci>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>.
 
 <\thttps://amcr.aiscr.cz/schema/profile#adb.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
