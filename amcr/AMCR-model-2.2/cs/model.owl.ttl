@@ -878,6 +878,11 @@
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :adb;
     rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<https://amcr.aiscr.cz/schema#adb.vyskovy_bod> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "vyskovy_bod"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain :adb;
+    rdfs:range :vyskovy_bod.
 <https://amcr.aiscr.cz/schema#adb.stratigraficke_jednotky> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "stratigraficke_jednotky"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
