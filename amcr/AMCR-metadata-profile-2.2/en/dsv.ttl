@@ -476,7 +476,7 @@
     a dsv:ClassProfile;
     dsv:class <https://amcr.aiscr.cz/schema#dokumentacni_jednotka>.
 
-<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.ez> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1386,20 +1386,6 @@
     a dsv:ClassProfile;
     dsv:class <https://amcr.aiscr.cz/schema#spoluprace_podrizeni>.
 
-<\thttps://amcr.aiscr.cz/schema/profile#spoluprace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
-    a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace>
-];
-    a dsv:ClassProfile;
-    dsv:class <https://amcr.aiscr.cz/schema#spoluprace>.
-
 <\thttps://amcr.aiscr.cz/schema/profile#autor> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
@@ -1424,6 +1410,34 @@
 ];
     a dsv:ClassProfile;
     dsv:class <https://amcr.aiscr.cz/schema#autor>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://amcr.aiscr.cz/schema#amcr>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.az> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://amcr.aiscr.cz/schema#ext_odkaz>.
 
 <\thttps://amcr.aiscr.cz/schema/profile#dokumentacni_jednotka.adb> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
@@ -1533,7 +1547,7 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#archeologicky_zaznam>.
 
-<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.archeologicky_zaznam> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.ez.archeologicky_zaznam> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1546,8 +1560,8 @@
 ];
     dsv:cardinality cardinality:11;
     dsv:property <https://amcr.aiscr.cz/schema#ext_odkaz.archeologicky_zaznam>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz>;
-    dsv:requirementLevel requirement:optional;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.ez>;
+    dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#archeologicky_zaznam>.
 
@@ -1672,7 +1686,7 @@
 ];
     dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#heslo.datace>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#obdobi>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#heslo>;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#datace>.
@@ -1961,7 +1975,7 @@
     dsv:cardinality cardinality:0n;
     dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.editor>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
-    dsv:requirementLevel requirement:optional;
+    dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#editor>.
 
@@ -1981,7 +1995,7 @@
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#archeologicky_zaznam>;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz>.
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.az>.
 
 <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.ext_odkaz> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
@@ -1999,9 +2013,9 @@
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz>.
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.ez>.
 
-<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.ext_zdroj> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.az.ext_zdroj> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -2014,7 +2028,7 @@
 ];
     dsv:cardinality cardinality:11;
     dsv:property <https://amcr.aiscr.cz/schema#ext_odkaz.ext_zdroj>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.az>;
     dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>.
@@ -2051,7 +2065,7 @@
     dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#extra_data.format>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
-    dsv:requirementLevel requirement:optional;
+    dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#dokument_format>.
 
@@ -2217,7 +2231,7 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#historie>.
 
-<\thttps://amcr.aiscr.cz/schema/profile#spoluprace.historie> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni.historie> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -2230,7 +2244,7 @@
 ];
     dsv:cardinality cardinality:0n;
     dsv:property <https://amcr.aiscr.cz/schema#spoluprace.historie>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni>;
     dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#historie>.
@@ -2554,7 +2568,7 @@
 ];
     dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.katastr>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.samostatny_nalez>;
     dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr>.
@@ -3268,7 +3282,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_katastr.pian>
 ];
-    dsv:cardinality cardinality:0n;
+    dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#ruian_katastr.pian>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr>;
     dsv:requirementLevel requirement:optional;
@@ -4245,7 +4259,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.pristupnost>
 ];
-    dsv:cardinality cardinality:11;
+    dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#dokument.pristupnost>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument>;
     dsv:requirementLevel requirement:mandatory;
@@ -4356,7 +4370,7 @@
     dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#dokument_cast.projekt>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument_cast>;
-    dsv:requirementLevel requirement:optional;
+    dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#projekt>.
 
@@ -4482,7 +4496,7 @@
     dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#organizace.soucast>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
-    dsv:requirementLevel requirement:optional;
+    dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#organizace>.
 
@@ -4557,38 +4571,6 @@
     dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#datum_specifikace>.
-
-<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni.equivalentclass> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
-    a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource owl:equivalentClass
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource owl:equivalentClass
-];
-    dsv:property owl:equivalentClass;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni>;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#spoluprace>.
-
-<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni.equivalentclass> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
-    a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource owl:equivalentClass
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource owl:equivalentClass
-];
-    dsv:property owl:equivalentClass;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni>;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#spoluprace>.
 
 <\thttps://amcr.aiscr.cz/schema/profile#uzivatel.spoluprace_nadrizeni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
@@ -5166,6 +5148,297 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#osoba>.
 
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.adb> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.adb>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.adb>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.adb>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#adb>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.projekt> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.projekt>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.projekt>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.projekt>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#projekt>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.archeologicky_zaznam> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.archeologicky_zaznam>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.archeologicky_zaznam>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.archeologicky_zaznam>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#archeologicky_zaznam>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.let> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.let>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.let>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.let>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#let>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.dokument> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.dokument>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.dokument>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.dokument>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#dokument>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.ext_zdroj> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.ext_zdroj>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.ext_zdroj>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.ext_zdroj>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.pian> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.pian>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.pian>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.pian>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#pian>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.samostatny_nalez> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.samostatny_nalez>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.samostatny_nalez>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.samostatny_nalez>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.uzivatel> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.uzivatel>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.uzivatel>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.uzivatel>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.heslo> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.heslo>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.heslo>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.heslo>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#heslo>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.ruian_kraj> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.ruian_kraj>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.ruian_kraj>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.ruian_kraj>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.organizace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.organizace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.organizace>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.organizace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#organizace>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.osoba> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.osoba>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.osoba>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.osoba>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#osoba>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.ruian_katastr> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.ruian_katastr>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.ruian_katastr>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.ruian_katastr>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#amcr.ruian_okres> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.ruian_okres>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#amcr.ruian_okres>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#amcr.ruian_okres>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#amcr>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#ruian_okres>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.vyskovy_bod> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.vyskovy_bod>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.vyskovy_bod>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.vyskovy_bod>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.adb>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#vyskovy_bod>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni.historie> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.historie>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.historie>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#spoluprace.historie>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <\thttps://amcr.aiscr.cz/schema/profile#historie>.
+
 <\thttps://amcr.aiscr.cz/schema/profile#adb.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
@@ -5270,7 +5543,7 @@
     dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.casopis_denik_nazev>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
-    dsv:requirementLevel requirement:optional;
+    dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
 
@@ -5288,7 +5561,7 @@
     dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.casopis_rocnik>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
-    dsv:requirementLevel requirement:optional;
+    dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
 
@@ -5323,7 +5596,7 @@
 ];
     dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#adb.cislo_popisne>;
-    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#adb>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.adb>;
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
@@ -5396,7 +5669,7 @@
     dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.datum_rd>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
-    dsv:requirementLevel requirement:optional;
+    dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -5969,7 +6242,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://amcr.aiscr.cz/schema#pian.geom_sjtsk_gml>
 ];
-    dsv:cardinality cardinality:11;
+    dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#pian.geom_sjtsk_gml>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.pian>;
     dsv:requirementLevel requirement:mandatory;
@@ -6041,7 +6314,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://amcr.aiscr.cz/schema#pian.geom_sjtsk_wkt>
 ];
-    dsv:cardinality cardinality:11;
+    dsv:cardinality cardinality:01;
     dsv:property <https://amcr.aiscr.cz/schema#pian.geom_sjtsk_wkt>;
     dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.pian>;
     dsv:requirementLevel requirement:mandatory;
@@ -6227,3 +6500,3639 @@
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.opengis.net/ont/geosparql#wktLiteral>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#heslo.heslo> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.heslo>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.heslo>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#heslo.heslo>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#heslo>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#heslo.heslo_en> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.heslo_en>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.heslo_en>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#heslo.heslo_en>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#heslo>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez.hloubka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.hloubka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.hloubka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.hloubka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#let.hodina_konec> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.hodina_konec>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.hodina_konec>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#let.hodina_konec>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#let>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#let.hodina_zacatek> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.hodina_zacatek>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.hodina_zacatek>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#let.hodina_zacatek>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#let>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_okres.hranice_gml> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.hranice_gml>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.hranice_gml>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_okres.hranice_gml>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_okres>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr.hranice_gml> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_katastr.hranice_gml>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_katastr.hranice_gml>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_katastr.hranice_gml>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj.hranice_gml> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.hranice_gml>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.hranice_gml>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_kraj.hranice_gml>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.opengis.net/ont/geosparql#gmlLiteral>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_okres.hranice_wkt> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.hranice_wkt>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.hranice_wkt>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_okres.hranice_wkt>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_okres>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.opengis.net/ont/geosparql#wktLiteral>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr.hranice_wkt> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_katastr.hranice_wkt>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_katastr.hranice_wkt>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_katastr.hranice_wkt>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.opengis.net/ont/geosparql#wktLiteral>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj.hranice_wkt> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.hranice_wkt>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.hranice_wkt>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_kraj.hranice_wkt>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.opengis.net/ont/geosparql#wktLiteral>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.ico> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.ico>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.ico>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.ico>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#nalez_predmet.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_predmet.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_predmet.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#nalez_predmet.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#nalez_predmet>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#soubor.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#soubor.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#soubor>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#hierarchie_nize.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#hierarchie.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#hierarchie_nize>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#hierarchie_vyse.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#hierarchie.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#hierarchie_vyse>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#historie.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#historie.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#historie.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#historie.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#historie>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#odkaz.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#odkaz.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#odkaz>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#vedouci_akce_ostatni.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#vedouci_akce_ostatni>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokument_typ_material_rada.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument_typ_material_rada.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument_typ_material_rada.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#dokument_typ_material_rada.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument_typ_material_rada>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#tvar.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#tvar.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#tvar.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#tvar.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#tvar>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#nalez_objekt.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_objekt.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_objekt.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#nalez_objekt.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#nalez_objekt>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.ez.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_odkaz.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.ez>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#spoluprace.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#spoluprace.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#let.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#let.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#let>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#vyskovy_bod.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#vyskovy_bod.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#vyskovy_bod.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#vyskovy_bod.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#vyskovy_bod>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokument_cast.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument_cast.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument_cast.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#dokument_cast.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument_cast>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#archeologicky_zaznam.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#archeologicky_zaznam.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#archeologicky_zaznam.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#archeologicky_zaznam.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#archeologicky_zaznam>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#projekt>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#heslo.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#heslo.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#heslo>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#uzivatel.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#uzivatel.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#pian.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#pian.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#pian.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#pian.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#pian>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokumentacni_jednotka.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokumentacni_jednotka>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#komponenta.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#komponenta.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#komponenta.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#komponenta.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#komponenta>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokument.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#dokument.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#osoba.ident_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.ident_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.ident_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.ident_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#lokalita.igsn> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#lokalita.igsn>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#lokalita.igsn>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#lokalita.igsn>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#lokalita>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez.igsn> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.igsn>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.igsn>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.igsn>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.isbn> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.isbn>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.isbn>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.isbn>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.issn> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.issn>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.issn>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.issn>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#uzivatel.jazyk> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.jazyk>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.jazyk>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#uzivatel.jazyk>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#akce.je_nz> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.je_nz>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.je_nz>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#akce.je_nz>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#akce>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#komponenta.jistota> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#komponenta.jistota>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#komponenta.jistota>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#komponenta.jistota>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#komponenta>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#uzivatel.jmeno> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.jmeno>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.jmeno>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#uzivatel.jmeno>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#osoba.jmeno> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.jmeno>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.jmeno>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.jmeno>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_okres.kod> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.kod>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.kod>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_okres.kod>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_okres>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr.kod> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_katastr.kod>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_katastr.kod>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_katastr.kod>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj.kod> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.kod>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.kod>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_kraj.kod>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#odkaz.kod> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.kod>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.kod>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#odkaz.kod>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#odkaz>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.kulturni_pamatka_cislo> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.kulturni_pamatka_cislo>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.kulturni_pamatka_cislo>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.kulturni_pamatka_cislo>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.projekt>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.kulturni_pamatka_popis> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.kulturni_pamatka_popis>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.kulturni_pamatka_popis>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.kulturni_pamatka_popis>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.projekt>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.link> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.link>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.link>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.link>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.lokalizace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.lokalizace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.lokalizace>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.lokalizace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.projekt>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#neident_akce.lokalizace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.lokalizace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.lokalizace>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#neident_akce.lokalizace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#neident_akce>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez.lokalizace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.lokalizace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.lokalizace>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.lokalizace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.samostatny_nalez>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#akce.lokalizace_okolnosti> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.lokalizace_okolnosti>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.lokalizace_okolnosti>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#akce.lokalizace_okolnosti>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.akce>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#extra_data.meritko> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.meritko>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.meritko>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#extra_data.meritko>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.mesicu_do_zverejneni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.mesicu_do_zverejneni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.mesicu_do_zverejneni>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.mesicu_do_zverejneni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#soubor.mimetype> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.mimetype>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.mimetype>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#soubor.mimetype>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#soubor>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.misto> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.misto>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.misto>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.misto>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.nazev> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.nazev>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.nazev>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.nazev>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#soubor.nazev> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.nazev>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.nazev>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#soubor.nazev>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#soubor>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_okres.nazev> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.nazev>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.nazev>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_okres.nazev>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_okres>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr.nazev> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_katastr.nazev>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_katastr.nazev>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_katastr.nazev>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_katastr>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj.nazev> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.nazev>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.nazev>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_kraj.nazev>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokumentacni_jednotka.nazev> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.nazev>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.nazev>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.nazev>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokumentacni_jednotka>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.nazev> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.nazev>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.nazev>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.nazev>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#lokalita.nazev> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#lokalita.nazev>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#lokalita.nazev>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#lokalita.nazev>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.lokalita>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.nazev_en> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.nazev_en>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.nazev_en>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.nazev_en>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_okres.nazev_en> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.nazev_en>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.nazev_en>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_okres.nazev_en>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_okres>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj.nazev_en> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.nazev_en>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.nazev_en>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_kraj.nazev_en>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#heslo.nazev_heslare> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.nazev_heslare>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.nazev_heslare>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#heslo.nazev_heslare>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#heslo>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#odkaz.nazev_kodu> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.nazev_kodu>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.nazev_kodu>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#odkaz.nazev_kodu>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#odkaz>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.nazev_zkraceny> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.nazev_zkraceny>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.nazev_zkraceny>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.nazev_zkraceny>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.nazev_zkraceny_en> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.nazev_zkraceny_en>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.nazev_zkraceny_en>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.nazev_zkraceny_en>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokumentacni_jednotka.negativni_jednotka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.negativni_jednotka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.negativni_jednotka>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.negativni_jednotka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokumentacni_jednotka>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#uzivatel.notifikace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.notifikace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.notifikace>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://amcr.aiscr.cz/schema#uzivatel.notifikace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.oao> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.oao>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.oao>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.oao>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#extra_data.odkaz> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.odkaz>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.odkaz>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#extra_data.odkaz>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#akce.odlozena_nz> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.odlozena_nz>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.odlozena_nz>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#akce.odlozena_nz>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#akce>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#oznamovatel.odpovedna_osoba> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#oznamovatel.odpovedna_osoba>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#oznamovatel.odpovedna_osoba>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#oznamovatel.odpovedna_osoba>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#oznamovatel>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#uzivatel.orcid> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.orcid>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.orcid>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#uzivatel.orcid>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#anyURI>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#osoba.orcid> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.orcid>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.orcid>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.orcid>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#anyURI>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.organizace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.organizace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.organizace>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.organizace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokument.oznaceni_originalu> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.oznaceni_originalu>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.oznaceni_originalu>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#dokument.oznaceni_originalu>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.oznaceni_stavby> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.oznaceni_stavby>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.oznaceni_stavby>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.oznaceni_stavby>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#projekt>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#oznamovatel.oznamovatel> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#oznamovatel.oznamovatel>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#oznamovatel.oznamovatel>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#oznamovatel.oznamovatel>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#oznamovatel>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.ez.paginace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz.paginace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz.paginace>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_odkaz.paginace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.ez>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.paginace_titulu> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.paginace_titulu>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.paginace_titulu>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.paginace_titulu>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.parcelni_cislo> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.parcelni_cislo>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.parcelni_cislo>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.parcelni_cislo>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.adb>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.parcelni_cislo> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.parcelni_cislo>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.parcelni_cislo>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.parcelni_cislo>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.projekt>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#soubor.path> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.path>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.path>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#soubor.path>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#soubor>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#neident_akce.pian> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.pian>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.pian>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#neident_akce.pian>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#neident_akce>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#let.pilot> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.pilot>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.pilot>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#let.pilot>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#let>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.planovane_zahajeni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.planovane_zahajeni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.planovane_zahajeni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.planovane_zahajeni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#projekt>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#nalez_predmet.pocet> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_predmet.pocet>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_predmet.pocet>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#nalez_predmet.pocet>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#nalez_predmet>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#nalez_objekt.pocet> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_objekt.pocet>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_objekt.pocet>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#nalez_objekt.pocet>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#nalez_objekt>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez.pocet> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.pocet>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.pocet>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.pocet>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#extra_data.pocet_variant_originalu> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.pocet_variant_originalu>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.pocet_variant_originalu>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#extra_data.pocet_variant_originalu>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.podnet> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.podnet>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.podnet>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.podnet>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#projekt>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#heslo.popis> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.popis>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.popis>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#heslo.popis>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#heslo>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#neident_akce.popis> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.popis>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.popis>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#neident_akce.popis>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#neident_akce>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokument.popis> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.popis>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.popis>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#dokument.popis>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#lokalita.popis> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#lokalita.popis>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#lokalita.popis>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#lokalita.popis>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.lokalita>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#heslo.popis_en> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.popis_en>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.popis_en>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#heslo.popis_en>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#heslo>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#autor.poradi> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#autor.poradi>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#autor.poradi>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#autor.poradi>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#autor>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#editor.poradi> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#autor.poradi>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#autor.poradi>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#autor.poradi>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#editor>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#nalez_predmet.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_predmet.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_predmet.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#nalez_predmet.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#nalez_predmet>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.adb>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#historie.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#historie.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#historie.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#historie.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#historie>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokument_cast.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument_cast.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument_cast.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#dokument_cast.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument_cast>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#tvar.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#tvar.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#tvar.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#tvar.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#tvar>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#oznamovatel.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#oznamovatel.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#oznamovatel.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#oznamovatel.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#oznamovatel>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#nalez_objekt.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_objekt.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#nalez_objekt.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#nalez_objekt.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#nalez_objekt>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#neident_akce.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#neident_akce.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#neident_akce>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#datace.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#datace.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#datace>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#komponenta.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#komponenta.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#komponenta.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#komponenta.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#komponenta>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokument.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#dokument.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#lokalita.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#lokalita.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#lokalita.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#lokalita.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.lokalita>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez.poznamka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.poznamka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.poznamka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.poznamka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez.predano> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.predano>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.predano>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.predano>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#komponenta.presna_datace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#komponenta.presna_datace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#komponenta.presna_datace>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#komponenta.presna_datace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#komponenta>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez.presna_datace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.presna_datace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.presna_datace>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.presna_datace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#uzivatel.prijmeni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.prijmeni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.prijmeni>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#uzivatel.prijmeni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#osoba.prijmeni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.prijmeni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.prijmeni>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.prijmeni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj.rada_id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.rada_id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_kraj.rada_id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_kraj.rada_id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_kraj>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#heslo.razeni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.razeni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.razeni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#heslo.razeni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#heslo>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#extra_data.region> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.region>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.region>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#extra_data.region>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#osoba.rodne_prijmeni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.rodne_prijmeni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.rodne_prijmeni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.rodne_prijmeni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#extra_data.rok_do> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.rok_do>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.rok_do>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#extra_data.rok_do>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#extra_data.rok_od> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.rok_od>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.rok_od>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#extra_data.rok_od>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#datace.rok_do_max> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.rok_do_max>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.rok_do_max>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#datace.rok_do_max>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#datace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#datace.rok_do_min> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.rok_do_min>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.rok_do_min>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#datace.rok_do_min>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#datace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#Datace.rok_od_max> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.rok_od_max>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.rok_od_max>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#datace.rok_od_max>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#datace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#datace.rok_od_min> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.rok_od_min>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#datace.rok_od_min>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#datace.rok_od_min>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#datace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#osoba.rok_narozeni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.rok_narozeni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.rok_narozeni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.rok_narozeni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#osoba.rok_umrti> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.rok_umrti>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.rok_umrti>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.rok_umrti>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.rok_popisu> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.rok_popisu>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.rok_popisu>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.rok_popisu>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#adb>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.rok_revize> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.rok_revize>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.rok_revize>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.rok_revize>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#adb>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#neident_akce.rok_ukonceni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.rok_ukonceni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.rok_ukonceni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#neident_akce.rok_ukonceni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#neident_akce>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#neident_akce.rok_zahajeni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.rok_zahajeni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#neident_akce.rok_zahajeni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#neident_akce.rok_zahajeni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#neident_akce>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.rok_vydani_vzniku> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.rok_vydani_vzniku>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.rok_vydani_vzniku>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.rok_vydani_vzniku>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokument.rok_vzniku> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.rok_vzniku>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.rok_vzniku>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#dokument.rok_vzniku>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.ror> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.ror>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.ror>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.ror>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#soubor.rozsah> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.rozsah>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.rozsah>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#soubor.rozsah>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#soubor>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.sbornik_nazev> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.sbornik_nazev>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.sbornik_nazev>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.sbornik_nazev>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#soubor.sha_512> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.sha_512>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.sha_512>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#soubor.sha_512>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#soubor>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#odkaz.scheme_uri> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.scheme_uri>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.scheme_uri>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#odkaz.scheme_uri>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#odkaz>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#extra_data.sirka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.sirka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.sirka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#extra_data.sirka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#soubor.size_mb> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.size_mb>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.size_mb>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#soubor.size_mb>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#soubor>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#odkaz.skos_mapping_relation> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.skos_mapping_relation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.skos_mapping_relation>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#odkaz.skos_mapping_relation>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#odkaz>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#uzivatel.skupina> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.skupina>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.skupina>
+];
+    dsv:cardinality cardinality:1n;
+    dsv:property <https://amcr.aiscr.cz/schema#uzivatel.skupina>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.sm5> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.sm5>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.sm5>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.sm5>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#adb>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#akce.souhrn_upresneni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.souhrn_upresneni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.souhrn_upresneni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#akce.souhrn_upresneni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.akce>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ruian_okres.spz> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.spz>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ruian_okres.spz>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ruian_okres.spz>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ruian_okres>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#archeologicky_zaznam.stav> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#archeologicky_zaznam.stav>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#archeologicky_zaznam.stav>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#archeologicky_zaznam.stav>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#archeologicky_zaznam>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.stav> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.stav>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.stav>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.stav>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#projekt>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#pian.stav> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#pian.stav>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#pian.stav>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#pian.stav>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#pian>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.stav> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.stav>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.stav>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.stav>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#dokument.stav> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.stav>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#dokument.stav>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#dokument.stav>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#dokument>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni.stav> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.stav>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.stav>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#spoluprace.stav>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_nadrizeni>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni.stav> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.stav>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#spoluprace.stav>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#spoluprace.stav>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#spoluprace_podrizeni>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez.stav> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.stav>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#samostatny_nalez.stav>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#samostatny_nalez.stav>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#samostatny_nalez>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.stav_pom> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.stav_pom>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.stav_pom>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.stav_pom>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#adb>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.stratigraficke_jednotky> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.stratigraficke_jednotky>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.stratigraficke_jednotky>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.stratigraficke_jednotky>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#adb>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#uzivatel.superadmin> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.superadmin>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.superadmin>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#uzivatel.superadmin>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.telefon> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.telefon>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.telefon>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.telefon>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#oznamovatel.telefon> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#oznamovatel.telefon>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#oznamovatel.telefon>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#oznamovatel.telefon>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#oznamovatel>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#uzivatel.telefon> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.telefon>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#uzivatel.telefon>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#uzivatel.telefon>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#uzivatel>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.termin_odevzdani_nz> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.termin_odevzdani_nz>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.termin_odevzdani_nz>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.termin_odevzdani_nz>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#projekt>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.trat> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.trat>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.trat>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.trat>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.adb>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#akce.typ> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.typ>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.typ>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#akce.typ>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#akce>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#hierarchie_nize.typ> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.typ>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.typ>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#hierarchie.typ>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#hierarchie_nize>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#hierarchie_vyse.typ> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.typ>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#hierarchie.typ>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#hierarchie.typ>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#hierarchie_vyse>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#let.typ_letounu> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.typ_letounu>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.typ_letounu>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#let.typ_letounu>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#let>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#historie.typ_zmeny> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#historie.typ_zmeny>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#historie.typ_zmeny>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#historie.typ_zmeny>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#historie>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#let.ucel_letu> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.ucel_letu>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.ucel_letu>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#let.ucel_letu>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#let>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#extra_data.udalost> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.udalost>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.udalost>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#extra_data.udalost>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#akce.ulozeni_dokumentace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.ulozeni_dokumentace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.ulozeni_dokumentace>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#akce.ulozeni_dokumentace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#akce>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#akce.ulozeni_nalezu> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.ulozeni_nalezu>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#akce.ulozeni_nalezu>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#akce.ulozeni_nalezu>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#akce>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#odkaz.uri> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.uri>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.uri>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#odkaz.uri>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#odkaz>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#soubor.url> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.url>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#soubor.url>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#soubor.url>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#soubor>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#anyURI>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#archeologicky_zaznam.uzivatelske_oznaceni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#archeologicky_zaznam.uzivatelske_oznaceni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#archeologicky_zaznam.uzivatelske_oznaceni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#archeologicky_zaznam.uzivatelske_oznaceni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.archeologicky_zaznam>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#let.uzivatelske_oznaceni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.uzivatelske_oznaceni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#let.uzivatelske_oznaceni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#let.uzivatelske_oznaceni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#let>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#projekt.uzivatelske_oznaceni> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.uzivatelske_oznaceni>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#projekt.uzivatelske_oznaceni>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#projekt.uzivatelske_oznaceni>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#projekt>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#adb.uzivatelske_oznaceni_sondy> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.uzivatelske_oznaceni_sondy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#adb.uzivatelske_oznaceni_sondy>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#adb.uzivatelske_oznaceni_sondy>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.adb>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj.vydavatel> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.vydavatel>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_zdroj.vydavatel>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_zdroj.vydavatel>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_zdroj>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#osoba.vypis> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.vypis>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.vypis>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.vypis>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#Osoba.vypis_cely> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.vypis_cely>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.vypis_cely>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.vypis_cely>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#extra_data.vyska> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.vyska>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#extra_data.vyska>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#extra_data.vyska>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#extra_data>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#osoba.wikidata> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.wikidata>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#osoba.wikidata>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#osoba.wikidata>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#osoba>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#anyURI>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#organizace.zanikla> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.zanikla>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#organizace.zanikla>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#organizace.zanikla>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#organizace>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#odkaz.zdroj> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.zdroj>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#odkaz.zdroj>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#odkaz.zdroj>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#odkaz>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#heslo.zkratka> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.zkratka>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#heslo.zkratka>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#heslo.zkratka>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#heslo>;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#pian.zm10> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#pian.zm10>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#pian.zm10>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#pian.zm10>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#chranene_udaje.pian>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.az.id> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz.id>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz.id>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_odkaz.id>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.az>;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.az.paginace> dct:isPartOf <\thttps://amcr.aiscr.cz/schema/profile#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz.paginace>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://amcr.aiscr.cz/schema#ext_odkaz.paginace>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://amcr.aiscr.cz/schema#ext_odkaz.paginace>;
+    dsv:domain <\thttps://amcr.aiscr.cz/schema/profile#ext_odkaz.az>;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
