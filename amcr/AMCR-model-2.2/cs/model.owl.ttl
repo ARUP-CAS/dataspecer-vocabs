@@ -11,8 +11,7 @@
     rdfs:subClassOf :heslo.
 :chranene_udaje a owl:Class, rdfs:Class;
     rdfs:label "chranene_udaje"@en;
-    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
-    rdfs:subClassOf :amcr.
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>.
 :lokalita a owl:Class, rdfs:Class;
     rdfs:label "lokalita"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -239,6 +238,11 @@
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.adb>;
     rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<https://amcr.aiscr.cz/schema#adb.vyskovy_bod> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "vyskovy_bod"@en;
+    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
+    rdfs:domain <https://amcr.aiscr.cz/schema#chranene_udaje.adb>;
+    rdfs:range :vyskovy_bod.
 :adb_typ a owl:Class, rdfs:Class;
     rdfs:label "adb_typ"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -821,7 +825,7 @@
 :adb a owl:Class, rdfs:Class;
     rdfs:label "adb"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
-    rdfs:subClassOf :amcr, :dokumentacni_jednotka.
+    rdfs:subClassOf :dokumentacni_jednotka.
 <https://amcr.aiscr.cz/schema#adb.dokumentacni_jednotka> a rdf:Property, owl:ObjectProperty;
     rdfs:label "dokumentacni_jednotka"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -878,11 +882,6 @@
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
     rdfs:domain :adb;
     rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
-<https://amcr.aiscr.cz/schema#adb.vyskovy_bod> a rdf:Property, owl:ObjectProperty;
-    rdfs:label "vyskovy_bod"@en;
-    rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
-    rdfs:domain :adb;
-    rdfs:range :vyskovy_bod.
 <https://amcr.aiscr.cz/schema#adb.stratigraficke_jednotky> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "stratigraficke_jednotky"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
@@ -1904,7 +1903,7 @@
 :dokumentacni_jednotka a owl:Class, rdfs:Class;
     rdfs:label "dokumentacni_jednotka"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
-    rdfs:subClassOf :pian.
+    rdfs:subClassOf :archeologicky_zaznam.
 <https://amcr.aiscr.cz/schema#dokumentacni_jednotka.negativni_jednotka> a rdf:Property, owl:DatatypeProperty;
     rdfs:label "negativni_jednotka"@en;
     rdfs:isDefinedBy <https://amcr.aiscr.cz/schema#>;
