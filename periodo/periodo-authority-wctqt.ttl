@@ -1,0 +1,2909 @@
+PREFIX as:         <https://www.w3.org/ns/activitystreams#>
+PREFIX bibo:       <http://purl.org/ontology/bibo/>
+PREFIX dcelements: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms:    <http://purl.org/dc/terms/>
+PREFIX foaf:       <http://xmlns.com/foaf/0.1/>
+PREFIX lexvo:      <http://lexvo.org/ontology#>
+PREFIX owl:        <http://www.w3.org/2002/07/owl#>
+PREFIX periodo:    <http://n2t.net/ark:/99152/p0v#>
+PREFIX prov:       <http://www.w3.org/ns/prov#>
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:       <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:       <http://www.w3.org/2006/time#>
+PREFIX void:       <http://rdfs.org/ns/void#>
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>
+
+<http://n2t.net/ark:/99152/p0wctqtdjzg>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000348" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Industrial Period 1"@en , "industriální období 1"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtgrp4>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "industriální období 1";
+        time:intervalFinishedBy  [ skos:prefLabel               "1900";
+                                   time:hasDateTimeDescription  [ time:year  "1900"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1801";
+                                   time:hasDateTimeDescription  [ time:year  "1801"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000348> .
+
+<http://n2t.net/ark:/99152/p0wctqtt89f>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000388" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Saxonian-Lusatian Culture"@en , "saská lužická kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthnzw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "saská lužická kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-751";
+                                   time:hasDateTimeDescription  [ time:year  "-0751"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1300";
+                                   time:hasDateTimeDescription  [ time:year  "-1300"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcbj5>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000388> .
+
+<http://n2t.net/ark:/99152/p0wctqtdpx7>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000385" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "raný středověk"@cs , "Early Middle Ages"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqttj7w>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "raný středověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1200";
+                                   time:hasDateTimeDescription  [ time:year  "1200"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "581";
+                                   time:hasDateTimeDescription  [ time:year  "0581"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000385> .
+
+<http://n2t.net/ark:/99152/p0wctqt59c3>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000261" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Bohunician"@en , "bohunicien"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2gxf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "bohunicien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-35001";
+                                   time:hasDateTimeDescription  [ time:year  "-35001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-40000";
+                                   time:hasDateTimeDescription  [ time:year  "-40000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000261> .
+
+<http://n2t.net/ark:/99152/p0wctqtck79>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000291" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Lower Palaeolithic"@en , "starší paleolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtmzmx>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "starší paleolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-300001";
+                                   time:hasDateTimeDescription  [ time:year  "-300001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1000000";
+                                   time:hasDateTimeDescription  [ time:year  "-1000000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000291> .
+
+<http://n2t.net/ark:/99152/p0wctqtgrp4>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000347" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Industrial Period"@en , "industriální období"@cs;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "industriální období";
+        time:intervalFinishedBy  [ skos:prefLabel               "2000";
+                                   time:hasDateTimeDescription  [ time:year  "2000"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1801";
+                                   time:hasDateTimeDescription  [ time:year  "1801"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000347> .
+
+<http://n2t.net/ark:/99152/p0wctqt8gr9>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000333" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Middle La Tène Period (LtB–C1)"@en , "střední doba laténská (LtB–C1)"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5c64>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "střední doba laténská (LtB–C1)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-171";
+                                   time:hasDateTimeDescription  [ time:year  "-0171"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-370";
+                                   time:hasDateTimeDescription  [ time:year  "-0370"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000333> .
+
+<http://n2t.net/ark:/99152/p0wctqt5c64>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000254" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "doba laténská"@cs , "La Tène Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "doba laténská";
+        time:intervalFinishedBy  [ skos:prefLabel               "-31";
+                                   time:hasDateTimeDescription  [ time:year  "-0031"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-450";
+                                   time:hasDateTimeDescription  [ time:year  "-0450"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000254> .
+
+<http://n2t.net/ark:/99152/p0wctqt.ttl>
+        void:inDataset  <http://n2t.net/ark:/99152/p0d> .
+
+<http://n2t.net/ark:/99152/p0wctqt6qt8>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000386" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Prague Type Pottery Culture"@en , "kultura pražského typu"@cs , "raný středověk 1"@cs , "Early Middle Ages 1"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtdpx7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "raný středověk 1";
+        time:intervalFinishedBy  [ skos:prefLabel               "650";
+                                   time:hasDateTimeDescription  [ time:year  "0650"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "581";
+                                   time:hasDateTimeDescription  [ time:year  "0581"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000386> .
+
+<http://n2t.net/ark:/99152/p0wctqthdkt>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000278" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "pozdní středohradištní období"@cs , "Final Middle Hillfort Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtv8mb>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "pozdní středohradištní období";
+        time:intervalFinishedBy  [ skos:prefLabel               "930";
+                                   time:hasDateTimeDescription  [ time:year  "0930"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "901";
+                                   time:hasDateTimeDescription  [ time:year  "0901"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000278> .
+
+<http://n2t.net/ark:/99152/p0wctqtbd83>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000260" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Szeletian"@en , "szeletien"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2gxf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "szeletien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-38001";
+                                   time:hasDateTimeDescription  [ time:year  "-38001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-40000";
+                                   time:hasDateTimeDescription  [ time:year  "-40000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000260> .
+
+<http://n2t.net/ark:/99152/p0wctqt2cd7>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000342" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "doba stěhování národů"@cs , "Migration Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "doba stěhování národů";
+        time:intervalFinishedBy  [ skos:prefLabel               "580";
+                                   time:hasDateTimeDescription  [ time:year  "0580"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "381";
+                                   time:hasDateTimeDescription  [ time:year  "0381"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000342> .
+
+<http://n2t.net/ark:/99152/p0wctqt5kq4>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000319" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "starší doba bronzová"@cs , "Early Bronze Age"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcsjh>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "starší doba bronzová";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1551";
+                                   time:hasDateTimeDescription  [ time:year  "-1551"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2300";
+                                   time:hasDateTimeDescription  [ time:year  "-2300"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000319> .
+
+<http://n2t.net/ark:/99152/p0wctqtpjbw>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000322" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Middle Bronze Age"@en , "střední doba bronzová"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcsjh>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "střední doba bronzová";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1251";
+                                   time:hasDateTimeDescription  [ time:year  "-1251"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1700";
+                                   time:hasDateTimeDescription  [ time:year  "-1700"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000322> .
+
+<http://n2t.net/ark:/99152/p0wctqtvzk7>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000286" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "časný eneolit"@cs , "Proto-Eneolithic"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthbgf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "časný eneolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-3801";
+                                   time:hasDateTimeDescription  [ time:year  "-3801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4500";
+                                   time:hasDateTimeDescription  [ time:year  "-4500"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000286> .
+
+<http://n2t.net/ark:/99152/p0wctqtrwg5>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000344" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Dobrodzień Group"@en , "dobrodzieńská skupina"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt4n8j>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "dobrodzieńská skupina";
+        time:intervalFinishedBy  [ skos:prefLabel               "480";
+                                   time:hasDateTimeDescription  [ time:year  "0480"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "381";
+                                   time:hasDateTimeDescription  [ time:year  "0381"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000344> .
+
+<http://n2t.net/ark:/99152/p0wctqtbr9x>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000308" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Turnov type"@en , "turnovský typ"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt4gkw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "turnovský typ";
+        time:intervalFinishedBy  [ skos:prefLabel               "-321";
+                                   time:hasDateTimeDescription  [ time:year  "-0321"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-410";
+                                   time:hasDateTimeDescription  [ time:year  "-0410"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000308> .
+
+<http://n2t.net/ark:/99152/p0wctqtvpdn>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000346" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "doba římská–stěhování národů"@cs , "Roman–Migration Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "doba římská–stěhování národů";
+        time:intervalFinishedBy  [ skos:prefLabel               "580";
+                                   time:hasDateTimeDescription  [ time:year  "0580"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-30";
+                                   time:hasDateTimeDescription  [ time:year  "-0030"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqt2cd7> , <http://n2t.net/ark:/99152/p0wctqt2zvg>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000346> .
+
+<http://n2t.net/ark:/99152/p0wctqtzzng>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000277" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Early Middle Hillfort Period"@en , "rané středohradištní období"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtv8mb>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "rané středohradištní období";
+        time:intervalFinishedBy  [ skos:prefLabel               "850";
+                                   time:hasDateTimeDescription  [ time:year  "0850"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "801";
+                                   time:hasDateTimeDescription  [ time:year  "0801"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000277> .
+
+<http://n2t.net/ark:/99152/p0wctqtsxs9>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000373" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "jevišovická kultura"@cs , "Jevišovice Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtfn33>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "jevišovická kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2801";
+                                   time:hasDateTimeDescription  [ time:year  "-2801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3100";
+                                   time:hasDateTimeDescription  [ time:year  "-3100"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000373> .
+
+<http://n2t.net/ark:/99152/p0wctqtgt56>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000372" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "řivnáčská kultura"@cs , "Řivnáč Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt6c3f>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "řivnáčská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2801";
+                                   time:hasDateTimeDescription  [ time:year  "-2801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3100";
+                                   time:hasDateTimeDescription  [ time:year  "-3100"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000372> .
+
+<http://n2t.net/ark:/99152/p0wctqtrmjn>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000297" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Štítary Culture"@en , "štítarská kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt8snq>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "štítarská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-751";
+                                   time:hasDateTimeDescription  [ time:year  "-0751"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1025";
+                                   time:hasDateTimeDescription  [ time:year  "-1025"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtc3bj>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000297> .
+
+<http://n2t.net/ark:/99152/p0wctqtmw49>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000337" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "lužická kultura"@cs , "Lusatian Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthnzw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "lužická kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1026";
+                                   time:hasDateTimeDescription  [ time:year  "-1026"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1300";
+                                   time:hasDateTimeDescription  [ time:year  "-1300"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcbj5>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000337> .
+
+<http://n2t.net/ark:/99152/p0wctqtwhx2>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000309" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "HaD–LtA"@en , "HaD–LtA"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthv2r>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "HaD–LtA";
+        time:intervalFinishedBy  [ skos:prefLabel               "-371";
+                                   time:hasDateTimeDescription  [ time:year  "-0371"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-625";
+                                   time:hasDateTimeDescription  [ time:year  "-0625"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000309> .
+
+<http://n2t.net/ark:/99152/p0wctqtc2b9>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000287" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Jordanów Culture"@en , "jordanovská kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtvzk7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "jordanovská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4001";
+                                   time:hasDateTimeDescription  [ time:year  "-4001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4200";
+                                   time:hasDateTimeDescription  [ time:year  "-4200"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000287> .
+
+<http://n2t.net/ark:/99152/p0wctqthrdx>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000312" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "moustérien"@cs , "Mousterian"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2zsv>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "moustérien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-40001";
+                                   time:hasDateTimeDescription  [ time:year  "-40001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-220000";
+                                   time:hasDateTimeDescription  [ time:year  "-220000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000312> .
+
+<http://n2t.net/ark:/99152/p0wctqtqwgw>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000259" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "kobylská skupina"@cs , "Kobyly Group"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtnhvv>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kobylská skupina";
+        time:intervalFinishedBy  [ skos:prefLabel               "-91";
+                                   time:hasDateTimeDescription  [ time:year  "-0091"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-110";
+                                   time:hasDateTimeDescription  [ time:year  "-0110"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000259> .
+
+<http://n2t.net/ark:/99152/p0wctqtvkmn>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000328" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "vrcholný středověk"@cs , "High Middle Ages"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt8pj3>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "vrcholný středověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1300";
+                                   time:hasDateTimeDescription  [ time:year  "1300"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1201";
+                                   time:hasDateTimeDescription  [ time:year  "1201"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000328> .
+
+<http://n2t.net/ark:/99152/p0wctqt873t>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000369" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "ohrozimský typ"@cs , "Ohrozim Type"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtf78f>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "ohrozimský typ";
+        time:intervalFinishedBy  [ skos:prefLabel               "-3301";
+                                   time:hasDateTimeDescription  [ time:year  "-3301"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3500";
+                                   time:hasDateTimeDescription  [ time:year  "-3500"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000369> .
+
+<http://n2t.net/ark:/99152/p0wctqtctk3>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000345" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Late Migration Period"@en , "mladší doba stěhování národů"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2cd7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "mladší doba stěhování národů";
+        time:intervalFinishedBy  [ skos:prefLabel               "580";
+                                   time:hasDateTimeDescription  [ time:year  "0580"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "481";
+                                   time:hasDateTimeDescription  [ time:year  "0481"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000345> .
+
+<http://n2t.net/ark:/99152/p0wctqt>
+        rdf:type               skos:ConceptScheme;
+        dcterms:source         [ dcterms:creator  [ foaf:name  "Archaeological Information System of the Czech Republic" ];
+                                 dcterms:issued   "2025";
+                                 dcterms:title    "AMCR Periods Vocabulary";
+                                 bibo:locator     "Locator provided for each term is the ID used for referencing the term in the original database.";
+                                 foaf:page        <https://amcr-info.aiscr.cz/>
+                               ];
+        foaf:isPrimaryTopicOf  <http://n2t.net/ark:/99152/p0wctqt.ttl> .
+
+<http://n2t.net/ark:/99152/p0wctqtpn3m>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000268" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Early Neolithic"@en , "starší neolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtc8g2>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "starší neolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4701";
+                                   time:hasDateTimeDescription  [ time:year  "-4701"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-5600";
+                                   time:hasDateTimeDescription  [ time:year  "-5600"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000268> .
+
+<http://n2t.net/ark:/99152/p0wctqtc3mw>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000300" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Platěnice Culture"@en , "platěnická kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt4gkw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "platěnická kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-401";
+                                   time:hasDateTimeDescription  [ time:year  "-0401"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-800";
+                                   time:hasDateTimeDescription  [ time:year  "-0800"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcbj5>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000300> .
+
+<http://n2t.net/ark:/99152/p0wctqtk4jw>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-001447" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "střední/mladší doba laténská (LtC1–2)"@cs , "Middle/Late La Tène Period (LtC1–2)"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5c64>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "střední/mladší doba laténská (LtC1–2)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-120";
+                                   time:hasDateTimeDescription  [ time:year  "-0120"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-250";
+                                   time:hasDateTimeDescription  [ time:year  "-0250"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-001447> .
+
+<http://n2t.net/ark:/99152/p0wctqt8snq>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000383" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "pozdní doba bronzová"@cs , "Final Bronze Age"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcsjh>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "pozdní doba bronzová";
+        time:intervalFinishedBy  [ skos:prefLabel               "-751";
+                                   time:hasDateTimeDescription  [ time:year  "-0751"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1000";
+                                   time:hasDateTimeDescription  [ time:year  "-1000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000383> .
+
+<http://n2t.net/ark:/99152/p0wctqtgph4>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000310" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Late Hallstatt Period (HaD2–3)"@en , "mladší doba halštatská (HaD2–3)"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthv2r>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "mladší doba halštatská (HaD2–3)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-461";
+                                   time:hasDateTimeDescription  [ time:year  "-0461"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-540";
+                                   time:hasDateTimeDescription  [ time:year  "-0540"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000310> .
+
+<http://n2t.net/ark:/99152/p0wctqtnkjq>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000361" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "kultura s vypíchanou keramikou"@cs , "Stroke Pottery Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt3c6n>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura s vypíchanou keramikou";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4401";
+                                   time:hasDateTimeDescription  [ time:year  "-4401"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4900";
+                                   time:hasDateTimeDescription  [ time:year  "-4900"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000361> .
+
+<http://n2t.net/ark:/99152/p0wctqtcmd2>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000257" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Przeworsk Culture"@en , "kultura przeworská"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5pcw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura przeworská";
+        time:intervalFinishedBy  [ skos:prefLabel               "400";
+                                   time:hasDateTimeDescription  [ time:year  "0400"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-200";
+                                   time:hasDateTimeDescription  [ time:year  "-0200"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000257> .
+
+<http://n2t.net/ark:/99152/p0wctqtcr24>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000392" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Middle Ages–Modern Period"@en , "středověk–novověk"@cs;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "středověk–novověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1800";
+                                   time:hasDateTimeDescription  [ time:year  "1800"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "581";
+                                   time:hasDateTimeDescription  [ time:year  "0581"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqttj7w> , <http://n2t.net/ark:/99152/p0wctqtthxk>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000392> .
+
+<http://n2t.net/ark:/99152/p0d>
+        dcterms:provenance  <http://n2t.net/ark:/99152/p0h#changes> .
+
+<http://n2t.net/ark:/99152/p0wctqtj5mj>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000262" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "aurignacien"@cs , "Aurignacian"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2gxf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "aurignacien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-28001";
+                                   time:hasDateTimeDescription  [ time:year  "-28001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-38000";
+                                   time:hasDateTimeDescription  [ time:year  "-38000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000262> .
+
+<http://n2t.net/ark:/99152/p0wctqt79p6>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000365" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "michelsberská kultura"@cs , "Michelsberg Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtvzk7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "michelsberská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-3801";
+                                   time:hasDateTimeDescription  [ time:year  "-3801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4000";
+                                   time:hasDateTimeDescription  [ time:year  "-4000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000365> .
+
+<http://n2t.net/ark:/99152/p0wctqt8cbx>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000362" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "kultura s moravskou malovanou keramikou 1"@cs , "Moravian Painted Ware Culture 1"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt3c6n>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura s moravskou malovanou keramikou 1";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4501";
+                                   time:hasDateTimeDescription  [ time:year  "-4501"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4700";
+                                   time:hasDateTimeDescription  [ time:year  "-4700"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000362> .
+
+<http://n2t.net/ark:/99152/p0wctqtq6ph>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000276" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Early Middle Ages 2–4"@en , "hradištní období"@cs , "Hillfort Period"@en , "raný středověk 2–4"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtdpx7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "raný středověk 2–4";
+        time:intervalFinishedBy  [ skos:prefLabel               "1150";
+                                   time:hasDateTimeDescription  [ time:year  "1150"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "651";
+                                   time:hasDateTimeDescription  [ time:year  "0651"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtv8mb> , <http://n2t.net/ark:/99152/p0wctqtz4h3> , <http://n2t.net/ark:/99152/p0wctqtsqpt>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000276> .
+
+<http://n2t.net/ark:/99152/p0wctqt87bw>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000307" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Horákov Culture"@en , "horákovská kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt4gkw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "horákovská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-461";
+                                   time:hasDateTimeDescription  [ time:year  "-0461"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-800";
+                                   time:hasDateTimeDescription  [ time:year  "-0800"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000307> .
+
+<http://n2t.net/ark:/99152/p0wctqthnzw>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000290" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Late Bronze Age"@en , "mladší doba bronzová"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcsjh>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "mladší doba bronzová";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1001";
+                                   time:hasDateTimeDescription  [ time:year  "-1001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1250";
+                                   time:hasDateTimeDescription  [ time:year  "-1250"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000290> .
+
+<http://n2t.net/ark:/99152/p0wctqtgj99>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000326" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Final Hillfort Period"@en , "pozdněhradištní období"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtsqpt>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "pozdněhradištní období";
+        time:intervalFinishedBy  [ skos:prefLabel               "1150";
+                                   time:hasDateTimeDescription  [ time:year  "1150"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1051";
+                                   time:hasDateTimeDescription  [ time:year  "1051"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000326> .
+
+<http://n2t.net/ark:/99152/p0wctqtcsjh>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000390" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Bronze Age"@en , "doba bronzová"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "doba bronzová";
+        time:intervalFinishedBy  [ skos:prefLabel               "-751";
+                                   time:hasDateTimeDescription  [ time:year  "-0751"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2300";
+                                   time:hasDateTimeDescription  [ time:year  "-2300"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000390> .
+
+<http://n2t.net/ark:/99152/p0wctqtdvd3>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000298" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Silesian Culture"@en , "slezská kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt8snq>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "slezská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-801";
+                                   time:hasDateTimeDescription  [ time:year  "-0801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1000";
+                                   time:hasDateTimeDescription  [ time:year  "-1000"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcbj5>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000298> .
+
+<http://n2t.net/ark:/99152/p0wctqtbqvf>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000334" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Hallstatt–La Tène Period"@en , "doba halštatská–laténská"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "doba halštatská–laténská";
+        time:intervalFinishedBy  [ skos:prefLabel               "-31";
+                                   time:hasDateTimeDescription  [ time:year  "-0031"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-800";
+                                   time:hasDateTimeDescription  [ time:year  "-0800"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqt5c64> , <http://n2t.net/ark:/99152/p0wctqthv2r>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000334> .
+
+<http://n2t.net/ark:/99152/p0wctqt8389>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000329" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Podmokly Group"@en , "podmokelská skupina"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt3rfk>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "podmokelská skupina";
+        time:intervalFinishedBy  [ skos:prefLabel               "-131";
+                                   time:hasDateTimeDescription  [ time:year  "-0131"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-400";
+                                   time:hasDateTimeDescription  [ time:year  "-0400"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000329> .
+
+<http://n2t.net/ark:/99152/p0wctqt2sh7>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000374" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "mladší/pozdní eneolit"@cs , "Late/Final Eneolithic"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthbgf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "mladší/pozdní eneolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2201";
+                                   time:hasDateTimeDescription  [ time:year  "-2201"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2900";
+                                   time:hasDateTimeDescription  [ time:year  "-2900"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000374> .
+
+<http://n2t.net/ark:/99152/p0wctqtc3bj>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000293" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "knovízská kultura"@cs , "Knovíz Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthnzw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "knovízská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-951";
+                                   time:hasDateTimeDescription  [ time:year  "-0951"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1250";
+                                   time:hasDateTimeDescription  [ time:year  "-1250"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000293> .
+
+<http://n2t.net/ark:/99152/p0wctqtz4h3>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000301" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "raný středověk 2"@cs , "Early Middle Ages 2"@en , "starší doba hradištní"@cs , "Early Hillfort Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtdpx7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "raný středověk 2";
+        time:intervalFinishedBy  [ skos:prefLabel               "800";
+                                   time:hasDateTimeDescription  [ time:year  "0800"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "651";
+                                   time:hasDateTimeDescription  [ time:year  "0651"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000301> .
+
+<http://n2t.net/ark:/99152/p0wctqt7bn5>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000387" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Neolithic–Eneolithic"@en , "neolit–eneolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "neolit–eneolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2301";
+                                   time:hasDateTimeDescription  [ time:year  "-2301"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-5600";
+                                   time:hasDateTimeDescription  [ time:year  "-5600"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000387> .
+
+<http://n2t.net/ark:/99152/p0wctqtp45b>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000349" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "industriální období 2"@cs , "Industrial Period 2"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtgrp4>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "industriální období 2";
+        time:intervalFinishedBy  [ skos:prefLabel               "2000";
+                                   time:hasDateTimeDescription  [ time:year  "2000"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1901";
+                                   time:hasDateTimeDescription  [ time:year  "1901"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000349> .
+
+<http://n2t.net/ark:/99152/p0wctqtb32x>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000381" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Modern Period 1"@en , "novověk 1"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtthxk>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "novověk 1";
+        time:intervalFinishedBy  [ skos:prefLabel               "1650";
+                                   time:hasDateTimeDescription  [ time:year  "1650"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1501";
+                                   time:hasDateTimeDescription  [ time:year  "1501"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000381> .
+
+<http://n2t.net/ark:/99152/p0wctqtbs25>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000321" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "věteřovská kultura"@cs , "Věteřov Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5kq4>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "věteřovská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1501";
+                                   time:hasDateTimeDescription  [ time:year  "-1501"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1700";
+                                   time:hasDateTimeDescription  [ time:year  "-1700"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000321> .
+
+<http://n2t.net/ark:/99152/p0wctqtprj8>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000284" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "hunting prehistory"@en , "Palaeolithic–Mesolithic"@en , "lovecký pravěk"@cs , "paleolit–mezolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtjkck>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "paleolit–mezolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-5601";
+                                   time:hasDateTimeDescription  [ time:year  "-5601"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1000000";
+                                   time:hasDateTimeDescription  [ time:year  "-1000000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000284> .
+
+<http://n2t.net/ark:/99152/p0wctqtqnt3>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000341" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Late Roman Period"@en , "mladší doba římská"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2zvg>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "mladší doba římská";
+        time:intervalFinishedBy  [ skos:prefLabel               "400";
+                                   time:hasDateTimeDescription  [ time:year  "0400"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "181";
+                                   time:hasDateTimeDescription  [ time:year  "0181"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000341> .
+
+<http://n2t.net/ark:/99152/p0wctqt9pr3>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000266" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "ostroměřská skupina"@cs , "Ostroměř Group"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtdz5r>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "ostroměřská skupina";
+        time:intervalFinishedBy  [ skos:prefLabel               "-8001";
+                                   time:hasDateTimeDescription  [ time:year  "-8001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-10000";
+                                   time:hasDateTimeDescription  [ time:year  "-10000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000266> .
+
+<http://n2t.net/ark:/99152/p0wctqt972r>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000352" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Chlopice-Veselé Culture"@en , "kultura Chlopice-Veselé"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2sh7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura Chlopice-Veselé";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2101";
+                                   time:hasDateTimeDescription  [ time:year  "-2101"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2400";
+                                   time:hasDateTimeDescription  [ time:year  "-2400"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000352> .
+
+<http://n2t.net/ark:/99152/p0wctqtjkck>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000289" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "prehistory"@en , "pravěk"@cs;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "pravěk";
+        time:intervalFinishedBy  [ skos:prefLabel               "580";
+                                   time:hasDateTimeDescription  [ time:year  "0580"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1000000";
+                                   time:hasDateTimeDescription  [ time:year  "-1000000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000289> .
+
+<http://n2t.net/ark:/99152/p0wctqtwzdx>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000299" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "nynická kultura"@cs , "Nynice Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt8snq>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "nynická kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-751";
+                                   time:hasDateTimeDescription  [ time:year  "-0751"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-975";
+                                   time:hasDateTimeDescription  [ time:year  "-0975"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000299> .
+
+<http://n2t.net/ark:/99152/p0wctqtsv2j>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000273" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "High Middle Ages–Modern Period"@en , "vrcholný středověk–novověk"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcr24>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "vrcholný středověk–novověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1800";
+                                   time:hasDateTimeDescription  [ time:year  "1800"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1201";
+                                   time:hasDateTimeDescription  [ time:year  "1201"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqt8pj3> , <http://n2t.net/ark:/99152/p0wctqtthxk>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000273> .
+
+<http://n2t.net/ark:/99152/p0wctqtppz9>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000317" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "badenská kultura"@cs , "Baden Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt6c3f>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "badenská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2901";
+                                   time:hasDateTimeDescription  [ time:year  "-2901"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3400";
+                                   time:hasDateTimeDescription  [ time:year  "-3400"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000317> .
+
+<http://www.wikidata.org/entity/Q213>
+        skos:prefLabel  "Czech Republic" .
+
+<http://n2t.net/ark:/99152/p0wctqtf7rk>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000288" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "doba laténská–římská"@cs , "La Tène–Roman Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "doba laténská–římská";
+        time:intervalFinishedBy  [ skos:prefLabel               "400";
+                                   time:hasDateTimeDescription  [ time:year  "0400"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-450";
+                                   time:hasDateTimeDescription  [ time:year  "-0450"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqt2zvg> , <http://n2t.net/ark:/99152/p0wctqt5c64>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000288> .
+
+<http://n2t.net/ark:/99152/p0wctqtmzmx>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000253" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "paleolit"@cs , "Palaeolithic"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtprj8>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "paleolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-9601";
+                                   time:hasDateTimeDescription  [ time:year  "-9601"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1000000";
+                                   time:hasDateTimeDescription  [ time:year  "-1000000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000253> .
+
+<http://n2t.net/ark:/99152/p0wctqt9vng>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000270" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "přechod raný/vrcholný středověk"@cs , "Early/High Middle Ages Transition"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqttj7w>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "přechod raný/vrcholný středověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1250";
+                                   time:hasDateTimeDescription  [ time:year  "1250"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1151";
+                                   time:hasDateTimeDescription  [ time:year  "1151"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtvkmn> , <http://n2t.net/ark:/99152/p0wctqtsqpt>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000270> .
+
+<http://n2t.net/ark:/99152/p0wctqtcwkk>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000303" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Advanced Late Hillfort Period"@en , "vyspělé mladohradištní období"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtsqpt>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "vyspělé mladohradištní období";
+        time:intervalFinishedBy  [ skos:prefLabel               "1050";
+                                   time:hasDateTimeDescription  [ time:year  "1050"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "951";
+                                   time:hasDateTimeDescription  [ time:year  "0951"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000303> .
+
+<http://n2t.net/ark:/99152/p0wctqtv8q7>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000384" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Bronze Age–Hallstatt Period"@en , "doba bronzová–halštatská"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "doba bronzová–halštatská";
+        time:intervalFinishedBy  [ skos:prefLabel               "-481";
+                                   time:hasDateTimeDescription  [ time:year  "-0481"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2300";
+                                   time:hasDateTimeDescription  [ time:year  "-2300"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcsjh> , <http://n2t.net/ark:/99152/p0wctqthv2r>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000384> .
+
+<http://n2t.net/ark:/99152/p0wctqt4n8j>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000343" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "starší doba stěhování národů"@cs , "Early Migration Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2cd7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "starší doba stěhování národů";
+        time:intervalFinishedBy  [ skos:prefLabel               "480";
+                                   time:hasDateTimeDescription  [ time:year  "0480"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "381";
+                                   time:hasDateTimeDescription  [ time:year  "0381"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000343> .
+
+<http://n2t.net/ark:/99152/p0wctqtbbf2>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000331" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "bylanská kultura"@cs , "Bylany Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt4gkw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "bylanská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-531";
+                                   time:hasDateTimeDescription  [ time:year  "-0531"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-800";
+                                   time:hasDateTimeDescription  [ time:year  "-0800"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000331> .
+
+<http://n2t.net/ark:/99152/p0wctqtthxk>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000252" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Modern Period"@en , "novověk"@cs;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "novověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1800";
+                                   time:hasDateTimeDescription  [ time:year  "1800"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1501";
+                                   time:hasDateTimeDescription  [ time:year  "1501"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000252> .
+
+<http://n2t.net/ark:/99152/p0wctqtfn33>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000280" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "mladší eneolit"@cs , "Late Eneolithic"@en;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "mladší eneolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2301";
+                                   time:hasDateTimeDescription  [ time:year  "-2301"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3100";
+                                   time:hasDateTimeDescription  [ time:year  "-3100"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000280> .
+
+<http://n2t.net/ark:/99152/p0wctqt5pcw>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000255" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Late–Final La Tène Period (LtC2–D)"@en , "mladší–pozdní doba laténská (LtC2–D)"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5c64>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "mladší–pozdní doba laténská (LtC2–D)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-31";
+                                   time:hasDateTimeDescription  [ time:year  "-0031"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-170";
+                                   time:hasDateTimeDescription  [ time:year  "-0170"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000255> .
+
+<http://n2t.net/ark:/99152/p0wctqtjb3d>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000351" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Kosihy-Čaka Culture"@en , "kultura Kosihy-Čaka"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2sh7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura Kosihy-Čaka";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2301";
+                                   time:hasDateTimeDescription  [ time:year  "-2301"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2800";
+                                   time:hasDateTimeDescription  [ time:year  "-2800"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000351> .
+
+<http://n2t.net/ark:/99152/p0wctqtvn2f>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000271" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Late Middle Ages"@en , "pozdní středověk"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt8pj3>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "pozdní středověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1500";
+                                   time:hasDateTimeDescription  [ time:year  "1500"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1301";
+                                   time:hasDateTimeDescription  [ time:year  "1301"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000271> .
+
+<http://n2t.net/ark:/99152/p0wctqtdprq>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000364" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "schusseriedská kultura"@cs , "Schussenried Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtvzk7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "schusseriedská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-3801";
+                                   time:hasDateTimeDescription  [ time:year  "-3801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4200";
+                                   time:hasDateTimeDescription  [ time:year  "-4200"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000364> .
+
+<http://n2t.net/ark:/99152/p0wctqtnkxz>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000320" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Hatvan Culture"@en , "hatvanská kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5kq4>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "hatvanská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1601";
+                                   time:hasDateTimeDescription  [ time:year  "-1601"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1800";
+                                   time:hasDateTimeDescription  [ time:year  "-1800"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000320> .
+
+<http://n2t.net/ark:/99152/p0wctqt4rnk>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000306" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Lengyel Culture"@en , "lengyelská kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt3c6n>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "lengyelská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4201";
+                                   time:hasDateTimeDescription  [ time:year  "-4201"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4600";
+                                   time:hasDateTimeDescription  [ time:year  "-4600"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000306> .
+
+<http://n2t.net/ark:/99152/p0wctqtxj7k>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000377" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "billendorfská kultura (HaC)"@cs , "Billendorf Culture (HaC)"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt4gkw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "billendorfská kultura (HaC)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-626";
+                                   time:hasDateTimeDescription  [ time:year  "-0626"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-800";
+                                   time:hasDateTimeDescription  [ time:year  "-0800"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqt238x>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000377> .
+
+<http://n2t.net/ark:/99152/p0wctqtkh74>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000272" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "přechod pozdní středověk/novověk"@cs , "Late Middle Ages/Modern Transition"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt8pj3>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "přechod pozdní středověk/novověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1550";
+                                   time:hasDateTimeDescription  [ time:year  "1550"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1451";
+                                   time:hasDateTimeDescription  [ time:year  "1451"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000272> .
+
+<http://n2t.net/ark:/99152/p0wctqtcbj5>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000281" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "období popelnicových polí"@cs , "Urnfield Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcsjh>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "období popelnicových polí";
+        time:intervalFinishedBy  [ skos:prefLabel               "-801";
+                                   time:hasDateTimeDescription  [ time:year  "-0801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1300";
+                                   time:hasDateTimeDescription  [ time:year  "-1300"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000281> .
+
+<http://n2t.net/ark:/99152/p0wctqtt5t4>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000302" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "vyspělé středohradištní období"@cs , "Advanced Middle Hillfort Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtv8mb>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "vyspělé středohradištní období";
+        time:intervalFinishedBy  [ skos:prefLabel               "900";
+                                   time:hasDateTimeDescription  [ time:year  "0900"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "851";
+                                   time:hasDateTimeDescription  [ time:year  "0851"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000302> .
+
+<http://n2t.net/ark:/99152/p0wctqt8pj3>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000327" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "vrcholný–pozdní středověk"@cs , "High–Late Middle Ages"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqttj7w>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "vrcholný–pozdní středověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1500";
+                                   time:hasDateTimeDescription  [ time:year  "1500"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1201";
+                                   time:hasDateTimeDescription  [ time:year  "1201"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000327> .
+
+<http://n2t.net/ark:/99152/p0wctqt7sbt>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000292" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Micoquien"@en , "micoquien"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2zsv>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "micoquien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-70001";
+                                   time:hasDateTimeDescription  [ time:year  "-70001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-130000";
+                                   time:hasDateTimeDescription  [ time:year  "-130000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000292> .
+
+<http://n2t.net/ark:/99152/p0wctqtckf3>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000314" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "krumlovien"@cs , "Krumlovian"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2zsv>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "krumlovien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-38001";
+                                   time:hasDateTimeDescription  [ time:year  "-38001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-130000";
+                                   time:hasDateTimeDescription  [ time:year  "-130000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000314> .
+
+<http://n2t.net/ark:/99152/p0wctqts9sm>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000382" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Modern Period 2"@en , "novověk 2"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtthxk>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "novověk 2";
+        time:intervalFinishedBy  [ skos:prefLabel               "1800";
+                                   time:hasDateTimeDescription  [ time:year  "1800"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1651";
+                                   time:hasDateTimeDescription  [ time:year  "1651"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000382> .
+
+<http://n2t.net/ark:/99152/p0wctqtd54h>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000375" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Corded Ware Culture"@en , "kultura se šňůrovou keramikou"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2sh7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura se šňůrovou keramikou";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2501";
+                                   time:hasDateTimeDescription  [ time:year  "-2501"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2900";
+                                   time:hasDateTimeDescription  [ time:year  "-2900"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000375> .
+
+<http://n2t.net/ark:/99152/p0wctqth4z2>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000279" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "kultura kulovitých amfor"@cs , "Globular Amphora Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt6c3f>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura kulovitých amfor";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2801";
+                                   time:hasDateTimeDescription  [ time:year  "-2801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3100";
+                                   time:hasDateTimeDescription  [ time:year  "-3100"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000279> .
+
+<http://n2t.net/ark:/99152/p0wctqtcm3c>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000304" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "zemědělský pravěk"@cs , "farming prehistory"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtjkck>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "zemědělský pravěk";
+        time:intervalFinishedBy  [ skos:prefLabel               "580";
+                                   time:hasDateTimeDescription  [ time:year  "0580"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-5600";
+                                   time:hasDateTimeDescription  [ time:year  "-5600"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000304> .
+
+<http://n2t.net/ark:/99152/p0wctqtxwfx>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000363" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "kultura s moravskou malovanou keramikou 2"@cs , "Moravian Painted Ware Culture 2"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtvzk7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura s moravskou malovanou keramikou 2";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4101";
+                                   time:hasDateTimeDescription  [ time:year  "-4101"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4500";
+                                   time:hasDateTimeDescription  [ time:year  "-4500"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqt8cbx>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000363> .
+
+<http://n2t.net/ark:/99152/p0wctqthbgf>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000285" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Eneolithic"@en , "eneolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt7bn5>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "eneolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2301";
+                                   time:hasDateTimeDescription  [ time:year  "-2301"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4500";
+                                   time:hasDateTimeDescription  [ time:year  "-4500"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000285> .
+
+<http://n2t.net/ark:/99152/p0wctqtv8mb>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000379" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Middle Hillfort Period"@en , "raný středověk 3"@cs , "Early Middle Ages 3"@en , "střední doba hradištní"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtdpx7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "raný středověk 3";
+        time:intervalFinishedBy  [ skos:prefLabel               "930";
+                                   time:hasDateTimeDescription  [ time:year  "0930"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "801";
+                                   time:hasDateTimeDescription  [ time:year  "0801"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000379> .
+
+<http://n2t.net/ark:/99152/p0wctqtv28s>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000391" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "protoúnětická kultura"@cs , "Proto-Únětice Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5kq4>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "protoúnětická kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2001";
+                                   time:hasDateTimeDescription  [ time:year  "-2001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2300";
+                                   time:hasDateTimeDescription  [ time:year  "-2300"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000391> .
+
+<http://n2t.net/ark:/99152/p0wctqt4sk8>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000359" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "nitranská kultura"@cs , "Nitra Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5kq4>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "nitranská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1801";
+                                   time:hasDateTimeDescription  [ time:year  "-1801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2100";
+                                   time:hasDateTimeDescription  [ time:year  "-2100"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000359> .
+
+<http://n2t.net/ark:/99152/p0wctqtp4gz>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000313" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "taubachien"@cs , "Taubachian"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2zsv>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "taubachien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-80001";
+                                   time:hasDateTimeDescription  [ time:year  "-80001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-130000";
+                                   time:hasDateTimeDescription  [ time:year  "-130000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000313> .
+
+<http://n2t.net/ark:/99152/p0wctqtg2nm>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000311" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "gravettien"@cs , "Gravettian"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2gxf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "gravettien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-18001";
+                                   time:hasDateTimeDescription  [ time:year  "-18001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-30000";
+                                   time:hasDateTimeDescription  [ time:year  "-30000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000311> .
+
+<http://n2t.net/ark:/99152/p0wctqt3qw6>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000356" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "rané mladohradištní období"@cs , "Early Late Hillfort Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtsqpt>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "rané mladohradištní období";
+        time:intervalFinishedBy  [ skos:prefLabel               "950";
+                                   time:hasDateTimeDescription  [ time:year  "0950"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "931";
+                                   time:hasDateTimeDescription  [ time:year  "0931"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000356> .
+
+<http://n2t.net/ark:/99152/p0wctqttj7w>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000380" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "středověk"@cs , "Middle Ages"@en;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "středověk";
+        time:intervalFinishedBy  [ skos:prefLabel               "1500";
+                                   time:hasDateTimeDescription  [ time:year  "1500"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "581";
+                                   time:hasDateTimeDescription  [ time:year  "0581"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000380> .
+
+<http://n2t.net/ark:/99152/p0wctqtmxw3>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000282" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Míškovice Type"@en , "miškovický typ"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2gxf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "miškovický typ";
+        time:intervalFinishedBy  [ skos:prefLabel               "-28001";
+                                   time:hasDateTimeDescription  [ time:year  "-28001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-38000";
+                                   time:hasDateTimeDescription  [ time:year  "-38000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000282> .
+
+<http://n2t.net/ark:/99152/p0wctqtg6mc>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000350" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Modern–Industrial Period"@en , "novověk–industriální období"@cs;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "novověk–industriální období";
+        time:intervalFinishedBy  [ skos:prefLabel               "2000";
+                                   time:hasDateTimeDescription  [ time:year  "2000"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "1501";
+                                   time:hasDateTimeDescription  [ time:year  "1501"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtthxk> , <http://n2t.net/ark:/99152/p0wctqtgrp4>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000350> .
+
+<http://n2t.net/ark:/99152/p0wctqt4gkw>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000376" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "starší doba halštatská (HaC–D1)"@cs , "Early Hallstatt Period (HaC–D1)"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthv2r>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "starší doba halštatská (HaC–D1)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-541";
+                                   time:hasDateTimeDescription  [ time:year  "-0541"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-800";
+                                   time:hasDateTimeDescription  [ time:year  "-0800"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000376> .
+
+<http://n2t.net/ark:/99152/p0wctqt3rfk>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000355" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "časná doba laténská (LtA)"@cs , "Early La Tène Period (LtA)"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5c64>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "časná doba laténská (LtA)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-381";
+                                   time:hasDateTimeDescription  [ time:year  "-0381"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-480";
+                                   time:hasDateTimeDescription  [ time:year  "-0480"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000355> .
+
+<http://n2t.net/ark:/99152/p0wctqtmksk>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000269" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Linear Pottery Culture"@en , "kultura s lineární keramikou"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtpn3m>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura s lineární keramikou";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4901";
+                                   time:hasDateTimeDescription  [ time:year  "-4901"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-5600";
+                                   time:hasDateTimeDescription  [ time:year  "-5600"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000269> .
+
+<http://n2t.net/ark:/99152/p0wctqt77nc>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000340" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Želizovce Group"@en , "želiezovská skupina"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtpn3m>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "želiezovská skupina";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4701";
+                                   time:hasDateTimeDescription  [ time:year  "-4701"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-5000";
+                                   time:hasDateTimeDescription  [ time:year  "-5000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000340> .
+
+<http://n2t.net/ark:/99152/p0wctqtjjsv>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000353" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Podolí Culture"@en , "podolská kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt8snq>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "podolská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-751";
+                                   time:hasDateTimeDescription  [ time:year  "-0751"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1025";
+                                   time:hasDateTimeDescription  [ time:year  "-1025"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcbj5>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000353> .
+
+<http://n2t.net/ark:/99152/p0wctqtq7bs>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000318" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "kultura zvoncovitých pohárů"@cs , "Bell Beaker Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2sh7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura zvoncovitých pohárů";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2201";
+                                   time:hasDateTimeDescription  [ time:year  "-2201"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2500";
+                                   time:hasDateTimeDescription  [ time:year  "-2500"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000318> .
+
+<http://n2t.net/ark:/99152/p0wctqtdz5r>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000264" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Epipalaeolithic"@en , "pozdní paleolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtmzmx>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "pozdní paleolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-8001";
+                                   time:hasDateTimeDescription  [ time:year  "-8001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-10000";
+                                   time:hasDateTimeDescription  [ time:year  "-10000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000264> .
+
+<http://n2t.net/ark:/99152/p0wctqtm493>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000336" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "starší doba římská"@cs , "Early Roman Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2zvg>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "starší doba římská";
+        time:intervalFinishedBy  [ skos:prefLabel               "180";
+                                   time:hasDateTimeDescription  [ time:year  "0180"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-30";
+                                   time:hasDateTimeDescription  [ time:year  "-0030"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000336> .
+
+<http://n2t.net/ark:/99152/p0wctqt238x>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000330" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "billendorfská kultura"@cs , "Billendorf Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt8snq>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "billendorfská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-451";
+                                   time:hasDateTimeDescription  [ time:year  "-0451"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-950";
+                                   time:hasDateTimeDescription  [ time:year  "-0950"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcbj5>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000330> .
+
+<http://n2t.net/ark:/99152/p0wctqtgnpb>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000367" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "kultura Retz-Bajč-Křepice"@cs , "Retz-Bajč-Křepice (Furchenstich) Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtf78f>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura Retz-Bajč-Křepice";
+        time:intervalFinishedBy  [ skos:prefLabel               "-3501";
+                                   time:hasDateTimeDescription  [ time:year  "-3501"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4000";
+                                   time:hasDateTimeDescription  [ time:year  "-4000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000367> .
+
+<http://n2t.net/ark:/99152/p0wctqtp5qb>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000339" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Milavče Culture"@en , "milavečská kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthnzw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "milavečská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-976";
+                                   time:hasDateTimeDescription  [ time:year  "-0976"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1250";
+                                   time:hasDateTimeDescription  [ time:year  "-1250"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000339> .
+
+<http://n2t.net/ark:/99152/p0wctqt2zsv>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000274" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Middle Palaeolithic"@en , "střední paleolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtmzmx>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "střední paleolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-40001";
+                                   time:hasDateTimeDescription  [ time:year  "-40001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-300000";
+                                   time:hasDateTimeDescription  [ time:year  "-300000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000274> .
+
+<http://n2t.net/ark:/99152/p0wctqt2zvg>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000335" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "doba římská"@cs , "Roman Period"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "doba římská";
+        time:intervalFinishedBy  [ skos:prefLabel               "400";
+                                   time:hasDateTimeDescription  [ time:year  "0400"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-30";
+                                   time:hasDateTimeDescription  [ time:year  "-0030"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000335> .
+
+<http://n2t.net/ark:/99152/p0wctqtnhvv>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000258" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "pozdní doba laténská (LtD)"@cs , "Final La Tène Period (LtD)"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5c64>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "pozdní doba laténská (LtD)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-31";
+                                   time:hasDateTimeDescription  [ time:year  "-0031"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-130";
+                                   time:hasDateTimeDescription  [ time:year  "-0130"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000258> .
+
+<http://n2t.net/ark:/99152/p0wctqtnz2f>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000358" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "únětická kultura"@cs , "Únětice Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5kq4>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "únětická kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1651";
+                                   time:hasDateTimeDescription  [ time:year  "-1651"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-2300";
+                                   time:hasDateTimeDescription  [ time:year  "-2300"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000358> .
+
+<http://n2t.net/ark:/99152/p0wctqtsqpt>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000325" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "raný středověk 4"@cs , "mladší doba hradištní"@cs , "Late Hillfort Period"@en , "Early Middle Ages 4"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtdpx7>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "raný středověk 4";
+        time:intervalFinishedBy  [ skos:prefLabel               "1150";
+                                   time:hasDateTimeDescription  [ time:year  "1150"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "931";
+                                   time:hasDateTimeDescription  [ time:year  "0931"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000325> .
+
+<http://n2t.net/ark:/99152/p0wctqt2gxf>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000315" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Upper Palaeolithic"@en , "mladší paleolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtmzmx>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "mladší paleolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-10001";
+                                   time:hasDateTimeDescription  [ time:year  "-10001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-40000";
+                                   time:hasDateTimeDescription  [ time:year  "-40000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000315> .
+
+<http://n2t.net/ark:/99152/p0wctqtfx9w>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000323" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Middle-Danubian Tumulus Culture"@en , "středodunajská mohylová kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtpjbw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "středodunajská mohylová kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1251";
+                                   time:hasDateTimeDescription  [ time:year  "-1251"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1650";
+                                   time:hasDateTimeDescription  [ time:year  "-1650"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000323> .
+
+<http://n2t.net/ark:/99152/p0wctqtqnsr>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000295" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "slezskoplatěnická kultura"@cs , "Silesian-Platěnice Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt8snq>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "slezskoplatěnická kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-451";
+                                   time:hasDateTimeDescription  [ time:year  "-0451"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1100";
+                                   time:hasDateTimeDescription  [ time:year  "-1100"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcbj5>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000295> .
+
+<http://n2t.net/ark:/99152/p0wctqt6c3f>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000370" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "střední eneolit"@cs , "Middle Eneolithic"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthbgf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "střední eneolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2801";
+                                   time:hasDateTimeDescription  [ time:year  "-2801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3350";
+                                   time:hasDateTimeDescription  [ time:year  "-3350"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000370> .
+
+<http://n2t.net/ark:/99152/p0wctqtmfxq>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000305" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Oberlauterbach Group"@en , "oberlauterbašská skupina"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtpn3m>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "oberlauterbašská skupina";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4601";
+                                   time:hasDateTimeDescription  [ time:year  "-4601"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-5000";
+                                   time:hasDateTimeDescription  [ time:year  "-5000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000305> .
+
+<http://n2t.net/ark:/99152/p0wctqtxz27>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000283" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Magdalenian"@en , "magdalénien"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2gxf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "magdalénien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-10001";
+                                   time:hasDateTimeDescription  [ time:year  "-10001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-20000";
+                                   time:hasDateTimeDescription  [ time:year  "-20000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000283> .
+
+<http://n2t.net/ark:/99152/p0wctqtrgjm>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000294" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Cheb Culture"@en , "chebská kultura"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthnzw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "chebská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1001";
+                                   time:hasDateTimeDescription  [ time:year  "-1001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1200";
+                                   time:hasDateTimeDescription  [ time:year  "-1200"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000294> .
+
+<http://n2t.net/ark:/99152/p0wctqtpkqf>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000332" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "halštatská mohylová kultura"@cs , "Hallstatt Tumulus Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt4gkw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "halštatská mohylová kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-531";
+                                   time:hasDateTimeDescription  [ time:year  "-0531"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-800";
+                                   time:hasDateTimeDescription  [ time:year  "-0800"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000332> .
+
+<http://n2t.net/ark:/99152/p0wctqtg6fv>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000263" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "epigravettien"@cs , "Epigravettian"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt2gxf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "epigravettien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-10001";
+                                   time:hasDateTimeDescription  [ time:year  "-10001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-18000";
+                                   time:hasDateTimeDescription  [ time:year  "-18000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000263> .
+
+<http://n2t.net/ark:/99152/p0wctqthv2r>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000354" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Hallstatt Period"@en , "doba halštatská"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtcm3c>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "doba halštatská";
+        time:intervalFinishedBy  [ skos:prefLabel               "-371";
+                                   time:hasDateTimeDescription  [ time:year  "-0371"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-800";
+                                   time:hasDateTimeDescription  [ time:year  "-0800"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000354> .
+
+<http://n2t.net/ark:/99152/p0wctqtc4v8>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000378" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Silesian–Platěnice Culture (HaC–D)"@en , "slezskoplatěnická kultura (HaC–D)"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt4gkw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "slezskoplatěnická kultura (HaC–D)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-371";
+                                   time:hasDateTimeDescription  [ time:year  "-0371"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-800";
+                                   time:hasDateTimeDescription  [ time:year  "-0800"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtqnsr>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000378> .
+
+<http://n2t.net/ark:/99152/p0wctqtqv96>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000389" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "kultura münchshöfenská"@cs , "Münchshofen Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt3c6n>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura münchshöfenská";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4201";
+                                   time:hasDateTimeDescription  [ time:year  "-4201"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4500";
+                                   time:hasDateTimeDescription  [ time:year  "-4500"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000389> .
+
+<http://n2t.net/ark:/99152/p0wctqttb7c>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000371" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "chamská kultura"@cs , "Cham Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt6c3f>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "chamská kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2801";
+                                   time:hasDateTimeDescription  [ time:year  "-2801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3100";
+                                   time:hasDateTimeDescription  [ time:year  "-3100"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000371> .
+
+<http://n2t.net/ark:/99152/p0wctqtm5d7>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000368" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Funnel Beaker Culture"@en , "kultura nálevkovitých pohárů"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtf78f>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura nálevkovitých pohárů";
+        time:intervalFinishedBy  [ skos:prefLabel               "-3301";
+                                   time:hasDateTimeDescription  [ time:year  "-3301"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3900";
+                                   time:hasDateTimeDescription  [ time:year  "-3900"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000368> .
+
+<http://n2t.net/ark:/99152/p0wctqt662t>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000275" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "mezolit"@cs , "Mesolithic"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtprj8>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "mezolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-5601";
+                                   time:hasDateTimeDescription  [ time:year  "-5601"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-9600";
+                                   time:hasDateTimeDescription  [ time:year  "-9600"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000275> .
+
+<http://n2t.net/ark:/99152/p0wctqtms37>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000394" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "šárecký typ"@cs , "Šárka Type"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtpn3m>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "šárecký typ";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4901";
+                                   time:hasDateTimeDescription  [ time:year  "-4901"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-5000";
+                                   time:hasDateTimeDescription  [ time:year  "-5000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000394> .
+
+<http://n2t.net/ark:/99152/p0wctqtdzdt>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000338" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "velatická kultura"@cs , "Velatice Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthnzw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "velatická kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1001";
+                                   time:hasDateTimeDescription  [ time:year  "-1001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1300";
+                                   time:hasDateTimeDescription  [ time:year  "-1300"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcbj5>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000338> .
+
+<http://n2t.net/ark:/99152/p0wctqt3c6n>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000360" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "střední–mladší neolit"@cs , "Middle–Late Neolithic"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtc8g2>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "střední–mladší neolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4201";
+                                   time:hasDateTimeDescription  [ time:year  "-4201"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-4700";
+                                   time:hasDateTimeDescription  [ time:year  "-4700"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000360> .
+
+<http://n2t.net/ark:/99152/p0wctqtc8g2>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000267" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Neolithic"@en , "neolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt7bn5>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "neolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-4201";
+                                   time:hasDateTimeDescription  [ time:year  "-4201"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-5600";
+                                   time:hasDateTimeDescription  [ time:year  "-5600"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000267> .
+
+<http://n2t.net/ark:/99152/p0wctqtf78f>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000366" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Early Eneolithic"@en , "starší eneolit"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqthbgf>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "starší eneolit";
+        time:intervalFinishedBy  [ skos:prefLabel               "-3351";
+                                   time:hasDateTimeDescription  [ time:year  "-3351"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3900";
+                                   time:hasDateTimeDescription  [ time:year  "-3900"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000366> .
+
+<http://n2t.net/ark:/99152/p0wctqtnx7n>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000393" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "plaňanský typ"@cs , "Plaňany Type"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtm493>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "plaňanský typ";
+        time:intervalFinishedBy  [ skos:prefLabel               "-6";
+                                   time:hasDateTimeDescription  [ time:year  "-0006"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-30";
+                                   time:hasDateTimeDescription  [ time:year  "-0030"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000393> .
+
+<http://n2t.net/ark:/99152/p0wctqtc2f6>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000357" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "bošácká skupina"@cs , "Bošáca Group"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtfn33>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "bošácká skupina";
+        time:intervalFinishedBy  [ skos:prefLabel               "-2601";
+                                   time:hasDateTimeDescription  [ time:year  "-2601"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-3000";
+                                   time:hasDateTimeDescription  [ time:year  "-3000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000357> .
+
+<http://n2t.net/ark:/99152/p0wctqtp3zv>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000324" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "českofalcká mohylová kultura"@cs , "Bohemian-Palatinate Tumulus Culture"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtpjbw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "českofalcká mohylová kultura";
+        time:intervalFinishedBy  [ skos:prefLabel               "-1251";
+                                   time:hasDateTimeDescription  [ time:year  "-1251"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1650";
+                                   time:hasDateTimeDescription  [ time:year  "-1650"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000324> .
+
+<http://n2t.net/ark:/99152/p0wctqtdqgm>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000256" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Púchov Culture"@en , "kultura púchovská"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqt5pcw>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "kultura púchovská";
+        time:intervalFinishedBy  [ skos:prefLabel               "180";
+                                   time:hasDateTimeDescription  [ time:year  "0180"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-480";
+                                   time:hasDateTimeDescription  [ time:year  "-0480"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000256> .
+
+<http://n2t.net/ark:/99152/p0wctqtbjh6>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000265" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "epimagdalénien"@cs , "Epimagdalenian"@en;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtdz5r>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "epimagdalénien";
+        time:intervalFinishedBy  [ skos:prefLabel               "-8001";
+                                   time:hasDateTimeDescription  [ time:year  "-8001"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-10000";
+                                   time:hasDateTimeDescription  [ time:year  "-10000"^^xsd:gYear ]
+                                 ];
+        foaf:page                <https://api.aiscr.cz/id/HES-000265> .
+
+<http://n2t.net/ark:/99152/p0wctqt4mnj>
+        rdf:type                 skos:Concept;
+        periodo:spatialCoverageDescription
+                "Czech Republic";
+        dcelements:language      "cs";
+        dcterms:language         <http://lexvo.org/id/iso639-1/cs>;
+        dcterms:source           [ bibo:locator  "HES-000296" ];
+        dcterms:spatial          <http://www.wikidata.org/entity/Q213>;
+        skos:altLabel            "Silesian-Platěnice Culture (HaB)"@en , "slezskoplatěnická kultura (HaB)"@cs;
+        skos:broader             <http://n2t.net/ark:/99152/p0wctqtqnsr>;
+        skos:inScheme            <http://n2t.net/ark:/99152/p0wctqt>;
+        skos:prefLabel           "slezskoplatěnická kultura (HaB)";
+        time:intervalFinishedBy  [ skos:prefLabel               "-801";
+                                   time:hasDateTimeDescription  [ time:year  "-0801"^^xsd:gYear ]
+                                 ];
+        time:intervalStartedBy   [ skos:prefLabel               "-1100";
+                                   time:hasDateTimeDescription  [ time:year  "-1100"^^xsd:gYear ]
+                                 ];
+        prov:wasDerivedFrom      <http://n2t.net/ark:/99152/p0wctqtcbj5>;
+        foaf:page                <https://api.aiscr.cz/id/HES-000296> .
